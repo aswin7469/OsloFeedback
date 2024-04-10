@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/qs/QS;
 .super Ljava/lang/Object;
-.source "QS.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 # interfaces
 .implements Lcom/android/systemui/plugins/FragmentBase;
@@ -14,13 +14,6 @@
 .annotation runtime Lcom/android/systemui/plugins/annotations/ProvidesInterface;
     action = "com.android.systemui.action.PLUGIN_QS"
     version = 0xf
-.end annotation
-
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/plugins/qs/QS$HeightListener;,
-        Lcom/android/systemui/plugins/qs/QS$ScrollListener;
-    }
 .end annotation
 
 
@@ -43,14 +36,17 @@
 .end method
 
 .method public disallowPanelTouches()Z
-    .locals 1
+    .locals 0
 
-    .line 101
+    .line 1
     invoke-interface {p0}, Lcom/android/systemui/plugins/qs/QS;->isShowingDetail()Z
 
-    move-result v0
+    .line 2
+    move-result p0
 
-    return v0
+    .line 5
+    return p0
+    .line 6
 .end method
 
 .method public abstract getDesiredHeight()I
@@ -72,12 +68,14 @@
 .end method
 
 .method public isFullyCollapsed()Z
-    .locals 1
+    .locals 0
 
-    .line 124
-    const/4 v0, 0x1
+    .line 1
+    const/4 p0, 0x1
 
-    return v0
+    .line 2
+    return p0
+    .line 3
 .end method
 
 .method public abstract isShowingDetail()Z
@@ -90,14 +88,6 @@
 .end method
 
 .method public abstract setCollapsedMediaVisibilityChangedListener(Ljava/util/function/Consumer;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/function/Consumer<",
-            "Ljava/lang/Boolean;",
-            ">;)V"
-        }
-    .end annotation
 .end method
 
 .method public abstract setContainerController(Lcom/android/systemui/plugins/qs/QSContainerController;)V
@@ -106,15 +96,15 @@
 .method public abstract setExpanded(Z)V
 .end method
 
-.method public abstract setFancyClipping(IIIZ)V
+.method public abstract setFancyClipping(IIIIIZZ)V
 .end method
 
 .method public setHasNotifications(Z)V
     .locals 0
-    .param p1, "hasNotifications"    # Z
 
-    .line 93
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public abstract setHeaderClickable(Z)V
@@ -129,15 +119,18 @@
 .method public abstract setInSplitShade(Z)V
 .end method
 
+.method public abstract setIsNotificationPanelFullWidth(Z)V
+.end method
+
 .method public abstract setListening(Z)V
 .end method
 
 .method public setOverScrollAmount(I)V
     .locals 0
-    .param p1, "overScrollAmount"    # I
 
-    .line 140
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public abstract setOverscrolling(Z)V
@@ -154,17 +147,16 @@
 
 .method public setScrollListener(Lcom/android/systemui/plugins/qs/QS$ScrollListener;)V
     .locals 0
-    .param p1, "scrollListener"    # Lcom/android/systemui/plugins/qs/QS$ScrollListener;
 
-    .line 135
+    .line 1
     return-void
+    .line 2
 .end method
 
-.method public setTransitionToFullShadeAmount(FF)V
+.method public setTransitionToFullShadeProgress(ZFF)V
     .locals 0
-    .param p1, "pxAmount"    # F
-    .param p2, "progress"    # F
 
-    .line 113
+    .line 1
     return-void
+    .line 2
 .end method

@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/NotificationPersonExtractorPlugin;
 .super Ljava/lang/Object;
-.source "NotificationPersonExtractorPlugin.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 # interfaces
 .implements Lcom/android/systemui/plugins/Plugin;
@@ -16,12 +16,6 @@
     version = 0x1
 .end annotation
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/plugins/NotificationPersonExtractorPlugin$PersonData;
-    }
-.end annotation
-
 
 # static fields
 .field public static final ACTION:Ljava/lang/String; = "com.android.systemui.action.PEOPLE_HUB_PERSON_EXTRACTOR"
@@ -34,37 +28,46 @@
 .end method
 
 .method public extractPersonKey(Landroid/service/notification/StatusBarNotification;)Ljava/lang/String;
-    .locals 1
-    .param p1, "sbn"    # Landroid/service/notification/StatusBarNotification;
+    .locals 0
 
-    .line 51
+    .line 1
     invoke-interface {p0, p1}, Lcom/android/systemui/plugins/NotificationPersonExtractorPlugin;->extractPerson(Landroid/service/notification/StatusBarNotification;)Lcom/android/systemui/plugins/NotificationPersonExtractorPlugin$PersonData;
 
-    move-result-object v0
+    .line 2
+    move-result-object p0
 
-    iget-object v0, v0, Lcom/android/systemui/plugins/NotificationPersonExtractorPlugin$PersonData;->key:Ljava/lang/String;
+    .line 5
+    iget-object p0, p0, Lcom/android/systemui/plugins/NotificationPersonExtractorPlugin$PersonData;->key:Ljava/lang/String;
 
-    return-object v0
+    .line 6
+    return-object p0
+    .line 8
 .end method
 
 .method public isPersonNotification(Landroid/service/notification/StatusBarNotification;)Z
-    .locals 1
-    .param p1, "sbn"    # Landroid/service/notification/StatusBarNotification;
+    .locals 0
 
-    .line 59
+    .line 1
     invoke-interface {p0, p1}, Lcom/android/systemui/plugins/NotificationPersonExtractorPlugin;->extractPersonKey(Landroid/service/notification/StatusBarNotification;)Ljava/lang/String;
 
-    move-result-object v0
+    .line 2
+    move-result-object p0
 
-    if-eqz v0, :cond_0
+    .line 5
+    if-eqz p0, :cond_0
 
-    const/4 v0, 0x1
+    .line 6
+    const/4 p0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
+    .line 10
     :goto_0
-    return v0
+    return p0
+    .line 11
 .end method

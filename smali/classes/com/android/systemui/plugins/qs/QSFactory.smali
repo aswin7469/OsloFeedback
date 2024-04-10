@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/qs/QSFactory;
 .super Ljava/lang/Object;
-.source "QSFactory.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 # interfaces
 .implements Lcom/android/systemui/plugins/Plugin;
@@ -20,19 +20,16 @@
 
 .annotation runtime Lcom/android/systemui/plugins/annotations/ProvidesInterface;
     action = "com.android.systemui.action.PLUGIN_QS_FACTORY"
-    version = 0x2
+    version = 0x3
 .end annotation
 
 
 # static fields
 .field public static final ACTION:Ljava/lang/String; = "com.android.systemui.action.PLUGIN_QS_FACTORY"
 
-.field public static final VERSION:I = 0x2
+.field public static final VERSION:I = 0x3
 
 
 # virtual methods
 .method public abstract createTile(Ljava/lang/String;)Lcom/android/systemui/plugins/qs/QSTile;
-.end method
-
-.method public abstract createTileView(Landroid/content/Context;Lcom/android/systemui/plugins/qs/QSTile;Z)Lcom/android/systemui/plugins/qs/QSTileView;
 .end method

@@ -1,25 +1,16 @@
 .class public interface abstract Lcom/android/systemui/plugins/VolumeDialogController$Callbacks;
 .super Ljava/lang/Object;
-.source "VolumeDialogController.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # annotations
 .annotation runtime Lcom/android/systemui/plugins/annotations/ProvidesInterface;
-    version = 0x1
-.end annotation
-
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/plugins/VolumeDialogController;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
-    name = "Callbacks"
+    version = 0x2
 .end annotation
 
 
 # static fields
-.field public static final VERSION:I = 0x1
+.field public static final VERSION:I = 0x2
 
 
 # virtual methods
@@ -27,6 +18,9 @@
 .end method
 
 .method public abstract onCaptionComponentStateChanged(Ljava/lang/Boolean;Ljava/lang/Boolean;)V
+.end method
+
+.method public abstract onCaptionEnabledStateChanged(Ljava/lang/Boolean;Ljava/lang/Boolean;)V
 .end method
 
 .method public abstract onConfigurationChanged()V
@@ -39,6 +33,9 @@
 .end method
 
 .method public abstract onScreenOff()V
+.end method
+
+.method public abstract onShowCsdWarning(II)V
 .end method
 
 .method public abstract onShowRequested(IZI)V

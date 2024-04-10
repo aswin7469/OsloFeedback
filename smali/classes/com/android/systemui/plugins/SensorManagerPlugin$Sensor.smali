@@ -1,17 +1,6 @@
 .class public Lcom/android/systemui/plugins/SensorManagerPlugin$Sensor;
 .super Ljava/lang/Object;
-.source "SensorManagerPlugin.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/plugins/SensorManagerPlugin;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
-    name = "Sensor"
-.end annotation
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # static fields
@@ -31,58 +20,56 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1, "type"    # I
 
-    .line 65
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 66
+    .line 2
     iput p1, p0, Lcom/android/systemui/plugins/SensorManagerPlugin$Sensor;->mType:I
 
-    .line 67
+    .line 5
     return-void
+    .line 7
 .end method
 
 
 # virtual methods
 .method public getType()I
-    .locals 1
+    .locals 0
 
-    .line 69
-    iget v0, p0, Lcom/android/systemui/plugins/SensorManagerPlugin$Sensor;->mType:I
+    .line 1
+    iget p0, p0, Lcom/android/systemui/plugins/SensorManagerPlugin$Sensor;->mType:I
 
-    return v0
+    .line 2
+    return p0
+    .line 4
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 72
+    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
+    .line 2
     const-string v1, "{PluginSensor type=\""
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 4
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    .line 6
+    iget p0, p0, Lcom/android/systemui/plugins/SensorManagerPlugin$Sensor;->mType:I
 
-    iget v1, p0, Lcom/android/systemui/plugins/SensorManagerPlugin$Sensor;->mType:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
+    .line 9
     const-string v1, "\"}"
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 11
+    invoke-static {v0, p0, v1}, Landroidx/compose/runtime/Anchor$$ExternalSyntheticOutline0;->m(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
-    move-result-object v0
+    .line 13
+    move-result-object p0
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    .line 16
+    return-object p0
+    .line 17
 .end method

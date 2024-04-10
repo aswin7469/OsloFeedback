@@ -1,20 +1,11 @@
 .class public interface abstract Lcom/android/systemui/plugins/statusbar/StatusBarStateController$StateListener;
 .super Ljava/lang/Object;
-.source "StatusBarStateController.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # annotations
 .annotation runtime Lcom/android/systemui/plugins/annotations/ProvidesInterface;
     version = 0x1
-.end annotation
-
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/plugins/statusbar/StatusBarStateController;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
-    name = "StateListener"
 .end annotation
 
 
@@ -25,73 +16,72 @@
 # virtual methods
 .method public onDozeAmountChanged(FF)V
     .locals 0
-    .param p1, "linear"    # F
-    .param p2, "eased"    # F
 
-    .line 112
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public onDozingChanged(Z)V
     .locals 0
-    .param p1, "isDozing"    # Z
 
-    .line 105
+    .line 1
     return-void
+    .line 2
+.end method
+
+.method public onDreamingChanged(Z)V
+    .locals 0
+
+    .line 1
+    return-void
+    .line 2
 .end method
 
 .method public onExpandedChanged(Z)V
     .locals 0
-    .param p1, "isExpanded"    # Z
 
-    .line 129
+    .line 1
     return-void
-.end method
-
-.method public onFullscreenStateChanged(Z)V
-    .locals 0
-    .param p1, "isFullscreen"    # Z
-
-    .line 119
-    return-void
+    .line 2
 .end method
 
 .method public onPulsingChanged(Z)V
     .locals 0
-    .param p1, "pulsing"    # Z
 
-    .line 124
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public onStateChanged(I)V
     .locals 0
-    .param p1, "newState"    # I
 
-    .line 94
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public onStatePostChange()V
     .locals 0
 
-    .line 84
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public onStatePreChange(II)V
     .locals 0
-    .param p1, "oldState"    # I
-    .param p2, "newState"    # I
 
-    .line 78
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public onUpcomingStateChanged(I)V
     .locals 0
-    .param p1, "upcomingState"    # I
 
-    .line 100
+    .line 1
     return-void
+    .line 2
 .end method

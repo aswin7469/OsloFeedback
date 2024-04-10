@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/VolumeDialog;
 .super Ljava/lang/Object;
-.source "VolumeDialog.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 # interfaces
 .implements Lcom/android/systemui/plugins/Plugin;
@@ -14,12 +14,6 @@
 .annotation runtime Lcom/android/systemui/plugins/annotations/ProvidesInterface;
     action = "com.android.systemui.action.PLUGIN_VOLUME"
     version = 0x1
-.end annotation
-
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/plugins/VolumeDialog$Callback;
-    }
 .end annotation
 
 

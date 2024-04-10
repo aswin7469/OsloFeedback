@@ -1,96 +1,101 @@
 .class public interface abstract Lcom/android/systemui/plugins/ToastPlugin$Toast;
 .super Ljava/lang/Object;
-.source "ToastPlugin.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/plugins/ToastPlugin;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
-    name = "Toast"
-.end annotation
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # virtual methods
 .method public getGravity()Ljava/lang/Integer;
-    .locals 1
+    .locals 0
 
-    .line 48
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 3
 .end method
 
 .method public getHorizontalMargin()Ljava/lang/Integer;
-    .locals 1
+    .locals 0
 
-    .line 72
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 3
 .end method
 
 .method public getInAnimation()Landroid/animation/Animator;
-    .locals 1
+    .locals 0
 
-    .line 96
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 3
 .end method
 
 .method public getOutAnimation()Landroid/animation/Animator;
-    .locals 1
+    .locals 0
 
-    .line 104
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 3
 .end method
 
 .method public getVerticalMargin()Ljava/lang/Integer;
-    .locals 1
+    .locals 0
 
-    .line 80
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 3
 .end method
 
 .method public getView()Landroid/view/View;
-    .locals 1
+    .locals 0
 
-    .line 88
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 3
 .end method
 
 .method public getXOffset()Ljava/lang/Integer;
-    .locals 1
+    .locals 0
 
-    .line 56
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 3
 .end method
 
 .method public getYOffset()Ljava/lang/Integer;
-    .locals 1
+    .locals 0
 
-    .line 64
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 3
 .end method
 
 .method public onOrientationChange(I)V
     .locals 0
-    .param p1, "orientation"    # I
 
-    .line 110
+    .line 1
     return-void
+    .line 2
 .end method

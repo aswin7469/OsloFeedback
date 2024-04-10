@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/qs/QSTile;
 .super Ljava/lang/Object;
-.source "QSTile.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # annotations
@@ -25,17 +25,6 @@
     version = 0x4
 .end annotation
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/plugins/qs/QSTile$SlashState;,
-        Lcom/android/systemui/plugins/qs/QSTile$SignalState;,
-        Lcom/android/systemui/plugins/qs/QSTile$BooleanState;,
-        Lcom/android/systemui/plugins/qs/QSTile$State;,
-        Lcom/android/systemui/plugins/qs/QSTile$Icon;,
-        Lcom/android/systemui/plugins/qs/QSTile$Callback;
-    }
-.end annotation
-
 
 # static fields
 .field public static final VERSION:I = 0x4
@@ -50,14 +39,12 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 49
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public abstract click(Landroid/view/View;)V
-.end method
-
-.method public abstract createTileView(Landroid/content/Context;)Lcom/android/systemui/plugins/qs/QSIconView;
 .end method
 
 .method public abstract destroy()V
@@ -72,18 +59,23 @@
 .end method
 
 .method public getMetricsSpec()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
-    .line 105
+    .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v0
+    .line 2
+    move-result-object p0
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    .line 5
+    invoke-virtual {p0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    move-result-object v0
+    .line 6
+    move-result-object p0
 
-    return-object v0
+    .line 9
+    return-object p0
+    .line 10
 .end method
 
 .method public abstract getState()Lcom/android/systemui/plugins/qs/QSTile$State;
@@ -102,12 +94,14 @@
 .end method
 
 .method public isTileReady()Z
-    .locals 1
+    .locals 0
 
-    .line 114
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return v0
+    .line 2
+    return p0
+    .line 3
 .end method
 
 .method public abstract longClick(Landroid/view/View;)V
@@ -115,10 +109,10 @@
 
 .method public populate(Landroid/metrics/LogMaker;)Landroid/metrics/LogMaker;
     .locals 0
-    .param p1, "logMaker"    # Landroid/metrics/LogMaker;
 
-    .line 98
+    .line 1
     return-object p1
+    .line 2
 .end method
 
 .method public abstract refreshState()V

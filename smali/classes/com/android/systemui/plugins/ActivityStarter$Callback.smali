@@ -1,17 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/ActivityStarter$Callback;
 .super Ljava/lang/Object;
-.source "ActivityStarter.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/plugins/ActivityStarter;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
-    name = "Callback"
-.end annotation
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # virtual methods

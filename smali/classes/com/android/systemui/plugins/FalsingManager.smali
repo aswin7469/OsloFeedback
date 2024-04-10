@@ -1,20 +1,11 @@
 .class public interface abstract Lcom/android/systemui/plugins/FalsingManager;
 .super Ljava/lang/Object;
-.source "FalsingManager.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # annotations
 .annotation runtime Lcom/android/systemui/plugins/annotations/ProvidesInterface;
     version = 0x6
-.end annotation
-
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/plugins/FalsingManager$ProximityEvent;,
-        Lcom/android/systemui/plugins/FalsingManager$FalsingTapListener;,
-        Lcom/android/systemui/plugins/FalsingManager$FalsingBeliefListener;,
-        Lcom/android/systemui/plugins/FalsingManager$Penalty;
-    }
 .end annotation
 
 
@@ -49,10 +40,16 @@
 .method public abstract isFalseDoubleTap()Z
 .end method
 
+.method public abstract isFalseLongTap(I)Z
+.end method
+
 .method public abstract isFalseTap(I)Z
 .end method
 
 .method public abstract isFalseTouch(I)Z
+.end method
+
+.method public abstract isProximityNear()Z
 .end method
 
 .method public abstract isReportingEnabled()Z

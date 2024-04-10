@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/FalsingPlugin;
 .super Ljava/lang/Object;
-.source "FalsingPlugin.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 # interfaces
 .implements Lcom/android/systemui/plugins/Plugin;
@@ -26,19 +26,19 @@
 # virtual methods
 .method public dataCollected(Z[B)V
     .locals 0
-    .param p1, "success"    # Z
-    .param p2, "data"    # [B
 
-    .line 42
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public getFalsingManager(Landroid/content/Context;)Lcom/android/systemui/plugins/FalsingManager;
-    .locals 1
-    .param p1, "context"    # Landroid/content/Context;
+    .locals 0
 
-    .line 50
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 3
 .end method

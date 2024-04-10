@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/VolumeDialogController;
 .super Ljava/lang/Object;
-.source "VolumeDialogController.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # annotations
@@ -22,14 +22,6 @@
     version = 0x1
 .end annotation
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/plugins/VolumeDialogController$Callbacks;,
-        Lcom/android/systemui/plugins/VolumeDialogController$State;,
-        Lcom/android/systemui/plugins/VolumeDialogController$StreamState;
-    }
-.end annotation
-
 
 # static fields
 .field public static final VERSION:I = 0x1
@@ -39,13 +31,13 @@
 .method public abstract addCallback(Lcom/android/systemui/plugins/VolumeDialogController$Callbacks;Landroid/os/Handler;)V
 .end method
 
-.method public abstract areCaptionsEnabled()Z
-.end method
-
 .method public abstract getAudioManager()Landroid/media/AudioManager;
 .end method
 
 .method public abstract getCaptionsComponentState(Z)V
+.end method
+
+.method public abstract getCaptionsEnabledState(Z)V
 .end method
 
 .method public abstract getState()V
@@ -66,7 +58,7 @@
 .method public abstract setActiveStream(I)V
 .end method
 
-.method public abstract setCaptionsEnabled(Z)V
+.method public abstract setCaptionsEnabledState(Z)V
 .end method
 
 .method public abstract setRingerMode(IZ)V

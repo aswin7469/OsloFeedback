@@ -1,30 +1,32 @@
 .class public interface abstract Lcom/android/systemui/plugins/Plugin;
 .super Ljava/lang/Object;
-.source "Plugin.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # virtual methods
 .method public getVersion()I
-    .locals 1
+    .locals 0
 
-    .line 121
-    const/4 v0, -0x1
+    .line 1
+    const/4 p0, -0x1
 
-    return v0
+    .line 2
+    return p0
+    .line 3
 .end method
 
 .method public onCreate(Landroid/content/Context;Landroid/content/Context;)V
     .locals 0
-    .param p1, "sysuiContext"    # Landroid/content/Context;
-    .param p2, "pluginContext"    # Landroid/content/Context;
 
-    .line 125
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public onDestroy()V
     .locals 0
 
-    .line 128
+    .line 1
     return-void
+    .line 2
 .end method

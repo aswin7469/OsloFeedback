@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/GlobalActions;
 .super Ljava/lang/Object;
-.source "GlobalActions.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 # interfaces
 .implements Lcom/android/systemui/plugins/Plugin;
@@ -16,12 +16,6 @@
     version = 0x1
 .end annotation
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/plugins/GlobalActions$GlobalActionsManager;
-    }
-.end annotation
-
 
 # static fields
 .field public static final ACTION:Ljava/lang/String; = "com.android.systemui.action.PLUGIN_GLOBAL_ACTIONS"
@@ -33,8 +27,9 @@
 .method public destroy()V
     .locals 0
 
-    .line 33
+    .line 1
     return-void
+    .line 2
 .end method
 
 .method public abstract showGlobalActions(Lcom/android/systemui/plugins/GlobalActions$GlobalActionsManager;)V
@@ -42,9 +37,8 @@
 
 .method public showShutdownUi(ZLjava/lang/String;)V
     .locals 0
-    .param p1, "isReboot"    # Z
-    .param p2, "reason"    # Ljava/lang/String;
 
-    .line 30
+    .line 1
     return-void
+    .line 2
 .end method

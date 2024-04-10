@@ -1,27 +1,13 @@
 .class public interface abstract Lcom/android/systemui/plugins/BcSmartspaceDataPlugin$IntentStarter;
 .super Ljava/lang/Object;
-.source "BcSmartspaceDataPlugin.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/plugins/BcSmartspaceDataPlugin;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
-    name = "IntentStarter"
-.end annotation
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # virtual methods
 .method public startFromAction(Landroid/app/smartspace/SmartspaceAction;Landroid/view/View;Z)V
-    .locals 3
-    .param p1, "action"    # Landroid/app/smartspace/SmartspaceAction;
-    .param p2, "v"    # Landroid/view/View;
-    .param p3, "showOnLockscreen"    # Z
+    .locals 1
 
-    .line 149
+    .line 1
     :try_start_0
     invoke-virtual {p1}, Landroid/app/smartspace/SmartspaceAction;->getIntent()Landroid/content/Intent;
 
@@ -29,16 +15,21 @@
 
     if-eqz v0, :cond_0
 
-    .line 150
+    .line 2
     invoke-virtual {p1}, Landroid/app/smartspace/SmartspaceAction;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
     invoke-interface {p0, p2, v0, p3}, Lcom/android/systemui/plugins/BcSmartspaceDataPlugin$IntentStarter;->startIntent(Landroid/view/View;Landroid/content/Intent;Z)V
 
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
     goto :goto_0
 
-    .line 151
+    .line 3
     :cond_0
     invoke-virtual {p1}, Landroid/app/smartspace/SmartspaceAction;->getPendingIntent()Landroid/app/PendingIntent;
 
@@ -46,61 +37,44 @@
 
     if-eqz v0, :cond_1
 
-    .line 152
+    .line 4
     invoke-virtual {p1}, Landroid/app/smartspace/SmartspaceAction;->getPendingIntent()Landroid/app/PendingIntent;
 
     move-result-object v0
 
-    invoke-interface {p0, v0, p3}, Lcom/android/systemui/plugins/BcSmartspaceDataPlugin$IntentStarter;->startPendingIntent(Landroid/app/PendingIntent;Z)V
+    invoke-interface {p0, p2, v0, p3}, Lcom/android/systemui/plugins/BcSmartspaceDataPlugin$IntentStarter;->startPendingIntent(Landroid/view/View;Landroid/app/PendingIntent;Z)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 156
-    :cond_1
-    :goto_0
     goto :goto_1
 
-    .line 154
-    :catch_0
-    move-exception v0
+    .line 5
+    :goto_0
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    .line 155
-    .local v0, "e":Landroid/content/ActivityNotFoundException;
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string p3, "Could not launch intent for action: "
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v2, "Could not launch intent for action: "
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p1
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string p2, "BcSmartspaceDataPlugin"
 
-    move-result-object v1
+    invoke-static {p2, p1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "BcSmartspaceDataPlugin"
-
-    invoke-static {v2, v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    .line 157
-    .end local v0    # "e":Landroid/content/ActivityNotFoundException;
+    :cond_1
     :goto_1
     return-void
 .end method
 
 .method public startFromAction(Landroid/app/smartspace/uitemplatedata/TapAction;Landroid/view/View;Z)V
-    .locals 3
-    .param p1, "action"    # Landroid/app/smartspace/uitemplatedata/TapAction;
-    .param p2, "v"    # Landroid/view/View;
-    .param p3, "showOnLockscreen"    # Z
+    .locals 1
 
-    .line 161
+    .line 6
     :try_start_0
     invoke-virtual {p1}, Landroid/app/smartspace/uitemplatedata/TapAction;->getIntent()Landroid/content/Intent;
 
@@ -108,16 +82,21 @@
 
     if-eqz v0, :cond_0
 
-    .line 162
+    .line 7
     invoke-virtual {p1}, Landroid/app/smartspace/uitemplatedata/TapAction;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
     invoke-interface {p0, p2, v0, p3}, Lcom/android/systemui/plugins/BcSmartspaceDataPlugin$IntentStarter;->startIntent(Landroid/view/View;Landroid/content/Intent;Z)V
 
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
     goto :goto_0
 
-    .line 163
+    .line 8
     :cond_0
     invoke-virtual {p1}, Landroid/app/smartspace/uitemplatedata/TapAction;->getPendingIntent()Landroid/app/PendingIntent;
 
@@ -125,50 +104,36 @@
 
     if-eqz v0, :cond_1
 
-    .line 164
+    .line 9
     invoke-virtual {p1}, Landroid/app/smartspace/uitemplatedata/TapAction;->getPendingIntent()Landroid/app/PendingIntent;
 
     move-result-object v0
 
-    invoke-interface {p0, v0, p3}, Lcom/android/systemui/plugins/BcSmartspaceDataPlugin$IntentStarter;->startPendingIntent(Landroid/app/PendingIntent;Z)V
+    invoke-interface {p0, p2, v0, p3}, Lcom/android/systemui/plugins/BcSmartspaceDataPlugin$IntentStarter;->startPendingIntent(Landroid/view/View;Landroid/app/PendingIntent;Z)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 168
-    :cond_1
-    :goto_0
     goto :goto_1
 
-    .line 166
-    :catch_0
-    move-exception v0
+    .line 10
+    :goto_0
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    .line 167
-    .local v0, "e":Landroid/content/ActivityNotFoundException;
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string p3, "Could not launch intent for action: "
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v2, "Could not launch intent for action: "
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p1
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string p2, "BcSmartspaceDataPlugin"
 
-    move-result-object v1
+    invoke-static {p2, p1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "BcSmartspaceDataPlugin"
-
-    invoke-static {v2, v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    .line 169
-    .end local v0    # "e":Landroid/content/ActivityNotFoundException;
+    :cond_1
     :goto_1
     return-void
 .end method
@@ -176,5 +141,5 @@
 .method public abstract startIntent(Landroid/view/View;Landroid/content/Intent;Z)V
 .end method
 
-.method public abstract startPendingIntent(Landroid/app/PendingIntent;Z)V
+.method public abstract startPendingIntent(Landroid/view/View;Landroid/app/PendingIntent;Z)V
 .end method

@@ -1,20 +1,11 @@
 .class public abstract Lcom/android/systemui/plugins/qs/QSTile$Icon;
 .super Ljava/lang/Object;
-.source "QSTile.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # annotations
 .annotation runtime Lcom/android/systemui/plugins/annotations/ProvidesInterface;
     version = 0x1
-.end annotation
-
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/plugins/qs/QSTile;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x409
-    name = "Icon"
 .end annotation
 
 
@@ -26,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 130
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,44 +28,54 @@
 .end method
 
 .method public getInvisibleDrawable(Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
-    .locals 1
-    .param p1, "context"    # Landroid/content/Context;
+    .locals 0
 
-    .line 135
+    .line 1
     invoke-virtual {p0, p1}, Lcom/android/systemui/plugins/qs/QSTile$Icon;->getDrawable(Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
 
-    move-result-object v0
+    .line 2
+    move-result-object p0
 
-    return-object v0
+    .line 5
+    return-object p0
+    .line 6
 .end method
 
 .method public getPadding()I
-    .locals 1
+    .locals 0
 
-    .line 144
-    const/4 v0, 0x0
+    .line 1
+    const/4 p0, 0x0
 
-    return v0
+    .line 2
+    return p0
+    .line 3
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
-    .line 140
-    const-class v0, Lcom/android/systemui/plugins/qs/QSTile$Icon;
+    .line 1
+    const-class p0, Lcom/android/systemui/plugins/qs/QSTile$Icon;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    .line 2
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
-    move-result v0
+    .line 4
+    move-result p0
 
-    return v0
+    .line 7
+    return p0
+    .line 8
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
-    .line 150
-    const-string v0, "Icon"
+    .line 1
+    const-string p0, "Icon"
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 4
 .end method

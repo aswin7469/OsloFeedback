@@ -1,17 +1,11 @@
 .class public Lcom/android/systemui/plugins/PluginDependency;
 .super Ljava/lang/Object;
-.source "PluginDependency.java"
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # annotations
 .annotation runtime Lcom/android/systemui/plugins/annotations/ProvidesInterface;
     version = 0x1
-.end annotation
-
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/plugins/PluginDependency$DependencyProvider;
-    }
 .end annotation
 
 
@@ -25,7 +19,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,25 +26,17 @@
 
 .method public static get(Lcom/android/systemui/plugins/Plugin;Ljava/lang/Class;)Ljava/lang/Object;
     .locals 1
-    .param p0, "p"    # Lcom/android/systemui/plugins/Plugin;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lcom/android/systemui/plugins/Plugin;",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
-        }
-    .end annotation
 
-    .line 25
-    .local p1, "cls":Ljava/lang/Class;, "Ljava/lang/Class<TT;>;"
+    .line 1
     sget-object v0, Lcom/android/systemui/plugins/PluginDependency;->sProvider:Lcom/android/systemui/plugins/PluginDependency$DependencyProvider;
 
+    .line 2
     invoke-virtual {v0, p0, p1}, Lcom/android/systemui/plugins/PluginDependency$DependencyProvider;->get(Lcom/android/systemui/plugins/Plugin;Ljava/lang/Class;)Ljava/lang/Object;
 
-    move-result-object v0
+    .line 4
+    move-result-object p0
 
-    return-object v0
+    .line 7
+    return-object p0
+    .line 8
 .end method

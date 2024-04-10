@@ -1,23 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/IntentButtonProvider$IntentButton;
 .super Ljava/lang/Object;
-.source "IntentButtonProvider.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/plugins/IntentButtonProvider;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
-    name = "IntentButton"
-.end annotation
-
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/plugins/IntentButtonProvider$IntentButton$IconState;
-    }
-.end annotation
+.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
 
 
 # virtual methods
