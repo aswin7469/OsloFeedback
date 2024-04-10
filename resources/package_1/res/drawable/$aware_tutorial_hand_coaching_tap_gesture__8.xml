@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__8__0"
+                  android:duration="667"
+                  android:startOffset="0"
+                  android:valueFrom="M291.7 100.4 C291.7,100.4 291.98,105.95 291.98,105.95 C292.05,107.43 293.26,108.6 294.74,108.64 C294.74,108.64 297.15,108.7 297.15,108.7 "
+                  android:valueTo="M291.7 100.4 C291.7,100.4 291.98,105.95 291.98,105.95 C292.05,107.43 293.26,108.6 294.74,108.64 C294.74,108.64 297.15,108.7 297.15,108.7 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__8__1"
+                  android:duration="283"
+                  android:startOffset="667"
+                  android:valueFrom="M291.7 100.4 C291.7,100.4 291.98,105.95 291.98,105.95 C292.05,107.43 293.26,108.6 294.74,108.64 C294.74,108.64 297.15,108.7 297.15,108.7 "
+                  android:valueTo="M288.39 113.64 C288.39,113.64 288.59,117.79 288.59,117.79 C288.65,118.9 289.55,119.77 290.66,119.8 C290.66,119.8 292.46,119.84 292.46,119.84 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__8__2"
+                  android:duration="600"
+                  android:startOffset="950"
+                  android:valueFrom="M288.39 113.64 C288.39,113.64 288.59,117.79 288.59,117.79 C288.65,118.9 289.55,119.77 290.66,119.8 C290.66,119.8 292.46,119.84 292.46,119.84 "
+                  android:valueTo="M291.7 100.4 C291.7,100.4 291.98,105.95 291.98,105.95 C292.05,107.43 293.26,108.6 294.74,108.64 C294.74,108.64 297.15,108.7 297.15,108.7 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+</set>

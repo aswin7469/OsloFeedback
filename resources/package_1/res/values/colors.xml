@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <color name="androidx_core_ripple_material_light">#1f000000</color>
+  <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
+  <color name="aware_tutorial_action_button_label_color">@android:color/white</color>
+  <color name="aware_tutorial_action_phone_inner_border_color">#f1f3f4</color>
+  <color name="aware_tutorial_action_phone_outer_border_color">#dadce0</color>
+  <color name="aware_tutorial_action_phone_screen_color">@android:color/white</color>
+  <color name="aware_tutorial_action_transparent_color">@android:color/transparent</color>
+  <color name="aware_tutorial_background_color">@android:color/white</color>
+  <color name="aware_tutorial_completed_use_case_color">#a0c2f9</color>
+  <color name="aware_tutorial_primary_color">#1a73e8</color>
+  <color name="aware_tutorial_sound_toggle_label_color">#5f6368</color>
+  <color name="aware_tutorial_subtitle_color">#5f6368</color>
+  <color name="aware_tutorial_title_color">#202124</color>
+  <color name="aware_tutorial_use_case_icon_background_color">@android:color/white</color>
+  <color name="glow_dark_asleep_color_1">#ab000000</color>
+  <color name="glow_dark_asleep_color_2">#ab000000</color>
+  <color name="glow_dark_asleep_color_3">#00000000</color>
+  <color name="glow_dark_color_1">#6492ca</color>
+  <color name="glow_dark_color_2">#cc1d64c2</color>
+  <color name="glow_dark_color_3">#00081a33</color>
+  <color name="glow_dark_color_3_og">#001d64c2</color>
+  <color name="glow_dark_line_color">#006eff</color>
+  <color name="glow_light_asleep_color_1">#ffffff</color>
+  <color name="glow_light_asleep_color_2">#80ffffff</color>
+  <color name="glow_light_asleep_color_3">#00000000</color>
+  <color name="glow_light_color_1">#b0c6db</color>
+  <color name="glow_light_color_2">#cc8ab4f8</color>
+  <color name="glow_light_color_3">#00232e3f</color>
+  <color name="glow_light_color_3_light_dark">#002d3b51</color>
+  <color name="glow_light_color_3_og">#008ab4f8</color>
+  <color name="glow_light_line_color">#80b1ff</color>
+  <color name="notification_action_color_filter">@color/androidx_core_secondary_text_default_material_light</color>
+  <color name="notification_icon_bg_color">#ff9e9e9e</color>
+</resources>

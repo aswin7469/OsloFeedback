@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__23__0"
+                  android:duration="667"
+                  android:startOffset="0"
+                  android:valueFrom="M223.28 80.07 C223.92,72.36 237.12,69.29 238.38,79.99 C239.87,92.55 241.35,132.73 241.35,132.73 C241.35,132.73 242.15,212.65 242.15,212.65 C242.15,212.65 211.04,216.38 211.94,208.7 C219.99,139.89 221.31,103.89 223.28,80.07c "
+                  android:valueTo="M223.28 80.07 C223.92,72.36 237.12,69.29 238.38,79.99 C239.87,92.55 241.35,132.73 241.35,132.73 C241.35,132.73 242.15,212.65 242.15,212.65 C242.15,212.65 211.04,216.38 211.94,208.7 C219.99,139.89 221.31,103.89 223.28,80.07c "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__23__1"
+                  android:duration="267"
+                  android:startOffset="667"
+                  android:valueFrom="M223.28 80.07 C223.92,72.36 237.12,69.29 238.38,79.99 C239.87,92.55 241.35,132.73 241.35,132.73 C241.35,132.73 242.15,212.65 242.15,212.65 C242.15,212.65 211.04,216.38 211.94,208.7 C219.99,139.89 221.31,103.89 223.28,80.07c "
+                  android:valueTo="M224.54 99.84 C225.18,92.13 236.72,88.45 237.99,99.15 C239.48,111.71 241.35,132.73 241.35,132.73 C241.35,132.73 242.15,212.65 242.15,212.65 C242.15,212.65 211.04,216.38 211.94,208.7 C219.99,139.89 222.56,123.66 224.54,99.84c "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__23__2"
+                  android:duration="617"
+                  android:startOffset="933"
+                  android:valueFrom="M224.54 99.84 C225.18,92.13 236.72,88.45 237.99,99.15 C239.48,111.71 241.35,132.73 241.35,132.73 C241.35,132.73 242.15,212.65 242.15,212.65 C242.15,212.65 211.04,216.38 211.94,208.7 C219.99,139.89 222.56,123.66 224.54,99.84c "
+                  android:valueTo="M223.28 80.07 C223.92,72.36 237.12,69.29 238.38,79.99 C239.87,92.55 241.35,132.73 241.35,132.73 C241.35,132.73 242.15,212.65 242.15,212.65 C242.15,212.65 211.04,216.38 211.94,208.7 C219.99,139.89 221.31,103.89 223.28,80.07c "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+</set>

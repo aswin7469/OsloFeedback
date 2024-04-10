@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__13__0"
+                  android:duration="667"
+                  android:startOffset="0"
+                  android:valueFrom="M263.1 90.59 C263.1,90.59 263,95.48 263,95.48 C262.96,97.14 264.11,98.58 265.73,98.93 C265.73,98.93 268.99,99.63 268.99,99.63 "
+                  android:valueTo="M263.1 90.59 C263.1,90.59 263,95.48 263,95.48 C262.96,97.14 264.11,98.58 265.73,98.93 C265.73,98.93 268.99,99.63 268.99,99.63 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__13__1"
+                  android:duration="283"
+                  android:startOffset="667"
+                  android:valueFrom="M263.1 90.59 C263.1,90.59 263,95.48 263,95.48 C262.96,97.14 264.11,98.58 265.73,98.93 C265.73,98.93 268.99,99.63 268.99,99.63 "
+                  android:valueTo="M260.86 104.95 C260.86,104.95 261.27,108.92 261.27,108.92 C261.4,110.27 262.47,111.33 263.82,111.45 C263.82,111.45 266.54,111.69 266.54,111.69 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__13__2"
+                  android:duration="600"
+                  android:startOffset="950"
+                  android:valueFrom="M260.86 104.95 C260.86,104.95 261.27,108.92 261.27,108.92 C261.4,110.27 262.47,111.33 263.82,111.45 C263.82,111.45 266.54,111.69 266.54,111.69 "
+                  android:valueTo="M263.1 90.59 C263.1,90.59 263,95.48 263,95.48 C262.96,97.14 264.11,98.58 265.73,98.93 C265.73,98.93 268.99,99.63 268.99,99.63 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+</set>

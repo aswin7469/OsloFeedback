@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <shape android:shape="rectangle">
+      <size android:height="@dimen/aware_tutorial_phone_height_with_margin"
+            android:width="@dimen/aware_tutorial_phone_width_with_margin" />
+      <solid android:color="@color/aware_tutorial_action_transparent_color" />
+    </shape>
+  </item>
+  <item android:left="@dimen/aware_tutorial_phone_buttons_margin_left"
+        android:top="@dimen/aware_tutorial_phone_power_button_margin_top"
+        android:right="@dimen/aware_tutorial_phone_buttons_margin_right"
+        android:bottom="@dimen/aware_tutorial_phone_power_button_margin_bottom">
+    <shape android:shape="rectangle">
+      <size android:height="@dimen/aware_tutorial_phone_power_button_height"
+            android:width="@dimen/aware_tutorial_phone_buttons_width" />
+      <solid android:color="@color/aware_tutorial_action_phone_outer_border_color" />
+      <corners android:topLeftRadius="0.0dp"
+               android:topRightRadius="@dimen/aware_tutorial_phone_buttons_width"
+               android:bottomLeftRadius="0.0dp"
+               android:bottomRightRadius="@dimen/aware_tutorial_phone_buttons_width" />
+    </shape>
+  </item>
+  <item android:left="@dimen/aware_tutorial_phone_buttons_margin_left"
+        android:top="@dimen/aware_tutorial_phone_volume_button_margin_top"
+        android:right="@dimen/aware_tutorial_phone_buttons_margin_right"
+        android:bottom="@dimen/aware_tutorial_volume_power_button_margin_bottom">
+    <shape android:shape="rectangle">
+      <size android:height="@dimen/aware_tutorial_phone_volume_button_height"
+            android:width="@dimen/aware_tutorial_phone_buttons_width" />
+      <solid android:color="@color/aware_tutorial_action_phone_outer_border_color" />
+      <corners android:topLeftRadius="0.0dp"
+               android:topRightRadius="@dimen/aware_tutorial_phone_buttons_width"
+               android:bottomLeftRadius="0.0dp"
+               android:bottomRightRadius="@dimen/aware_tutorial_phone_buttons_width" />
+    </shape>
+  </item>
+  <item android:left="@dimen/aware_tutorial_phone_margin"
+        android:top="@dimen/aware_tutorial_phone_margin"
+        android:right="@dimen/aware_tutorial_phone_margin"
+        android:bottom="@dimen/aware_tutorial_phone_margin">
+    <shape android:shape="rectangle">
+      <size android:height="@dimen/aware_tutorial_phone_height"
+            android:width="@dimen/aware_tutorial_phone_width" />
+      <corners android:radius="@dimen/aware_tutorial_phone_corner_radius" />
+      <solid android:color="@color/aware_tutorial_action_phone_inner_border_color" />
+      <stroke android:width="@dimen/aware_tutorial_phone_outer_border_width"
+              android:color="@color/aware_tutorial_action_phone_outer_border_color" />
+    </shape>
+  </item>
+  <item android:left="@dimen/aware_tutorial_phone_screen_margin"
+        android:top="@dimen/aware_tutorial_phone_screen_margin"
+        android:right="@dimen/aware_tutorial_phone_screen_margin"
+        android:bottom="@dimen/aware_tutorial_phone_screen_margin">
+    <shape android:shape="rectangle">
+      <size android:height="@dimen/aware_tutorial_phone_screen_height"
+            android:width="@dimen/aware_tutorial_phone_screen_width" />
+      <corners android:radius="@dimen/aware_tutorial_phone_screen_corner_radius" />
+      <solid android:color="@color/aware_tutorial_action_phone_screen_color" />
+    </shape>
+  </item>
+</layer-list>

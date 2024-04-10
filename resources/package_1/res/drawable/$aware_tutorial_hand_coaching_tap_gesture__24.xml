@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__24__0"
+                  android:duration="667"
+                  android:startOffset="0"
+                  android:valueFrom="M227.2 77.82 C227.2,77.82 227.3,85.14 227.3,85.14 C227.41,85.84 228.34,86.43 228.91,85.93 C229.84,85.12 233.1,85.17 234.21,85.93 C234.83,86.36 235.71,85.84 235.82,85.14 C235.82,85.14 235.56,81.92 235.56,81.92 "
+                  android:valueTo="M227.2 77.82 C227.2,77.82 227.3,85.14 227.3,85.14 C227.41,85.84 228.34,86.43 228.91,85.93 C229.84,85.12 233.1,85.17 234.21,85.93 C234.83,86.36 235.71,85.84 235.82,85.14 C235.82,85.14 235.56,81.92 235.56,81.92 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__24__1"
+                  android:duration="283"
+                  android:startOffset="667"
+                  android:valueFrom="M227.2 77.82 C227.2,77.82 227.3,85.14 227.3,85.14 C227.41,85.84 228.34,86.43 228.91,85.93 C229.84,85.12 233.1,85.17 234.21,85.93 C234.83,86.36 235.71,85.84 235.82,85.14 C235.82,85.14 235.56,81.92 235.56,81.92 "
+                  android:valueTo="M228.7 96.23 C228.7,96.23 228.78,102.01 228.78,102.01 C228.87,102.56 229.61,103.02 230.06,102.63 C230.79,101.99 233.36,102.03 234.23,102.63 C234.73,102.97 235.42,102.56 235.51,102.01 C235.51,102.01 235.3,99.46 235.3,99.46 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__24__2"
+                  android:duration="600"
+                  android:startOffset="950"
+                  android:valueFrom="M228.7 96.23 C228.7,96.23 228.78,102.01 228.78,102.01 C228.87,102.56 229.61,103.02 230.06,102.63 C230.79,101.99 233.36,102.03 234.23,102.63 C234.73,102.97 235.42,102.56 235.51,102.01 C235.51,102.01 235.3,99.46 235.3,99.46 "
+                  android:valueTo="M227.2 77.82 C227.2,77.82 227.3,85.14 227.3,85.14 C227.41,85.84 228.34,86.43 228.91,85.93 C229.84,85.12 233.1,85.17 234.21,85.93 C234.83,86.36 235.71,85.84 235.82,85.14 C235.82,85.14 235.56,81.92 235.56,81.92 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+</set>

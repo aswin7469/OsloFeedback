@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_right_animation__15__0"
+                  android:duration="1617"
+                  android:startOffset="0"
+                  android:valueFrom="#a6c2f4"
+                  android:valueTo="#a6c2f4"
+                  android:valueType="colorType"
+                  android:propertyName="fillColor" />
+</set>

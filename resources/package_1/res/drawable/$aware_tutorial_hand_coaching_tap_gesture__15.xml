@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__15__0"
+                  android:duration="167"
+                  android:startOffset="0"
+                  android:valueFrom="-5"
+                  android:valueTo="-5"
+                  android:valueType="floatType"
+                  android:propertyName="rotation" />
+</set>

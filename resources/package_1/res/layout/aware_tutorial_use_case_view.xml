@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <FrameLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center"
+                 android:layout_width="@dimen/aware_tutorial_use_case_icon_background_diameter_with_margins"
+                 android:layout_height="@dimen/aware_tutorial_use_case_icon_background_diameter_with_margins"
+                 android:layout_margin="2.0dp">
+      <ImageView android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:src="@drawable/aware_tutorial_use_case_icon_background" />
+      <ImageView android:layout_gravity="center"
+                 android:id="@id/aware_tutorial_use_case_view_icon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="bottom|center|end"
+               android:id="@id/aware_tutorial_use_case_check_mark"
+               android:visibility="invisible"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="14.0dp"
+               android:src="@drawable/aware_tutorial_use_cases_check_mark"
+               android:contentDescription="@string/aware_tutorial_completed_icon_content_description"
+               android:layout_marginEnd="10.0dp" />
+  </FrameLayout>
+  <TextView android:id="@id/aware_tutorial_use_case_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/aware_tutorial_use_case_title_margin_start_end"
+            android:layout_marginEnd="@dimen/aware_tutorial_use_case_title_margin_start_end"
+            style="@style/TextAppearance.AwareTutorial.UseCaseTitle" />
+</LinearLayout>

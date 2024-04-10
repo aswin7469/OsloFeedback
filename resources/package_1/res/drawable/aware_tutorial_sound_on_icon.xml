@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="18.0dp"
+        android:width="18.0dp"
+        android:viewportWidth="18.0"
+        android:viewportHeight="18.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <path android:fillColor="@color/aware_tutorial_sound_toggle_label_color"
+        android:pathData="M0 6.00047V12.0005H4L9 17.0005V1.00047L4 6.00047H0ZM13.5 9.00047C13.5 7.23047 12.48 5.71047 11 4.97047V13.0205C12.48 12.2905 13.5 10.7705 13.5 9.00047ZM11 0.230469V2.29047C13.89 3.15047 16 5.83047 16 9.00047C16 12.1705 13.89 14.8505 11 15.7105V17.7705C15.01 16.8605 18 13.2805 18 9.00047C18 4.72047 15.01 1.14047 11 0.230469Z" />
+</vector>

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<manifest android:versionCode="1"
+          android:versionName="1.0"
+          android:compileSdkVersion="33"
+          android:compileSdkVersionCodename="13"
+          package="com.google.oslo"
+          platformBuildVersionCode="33"
+          platformBuildVersionName="13" xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-sdk android:minSdkVersion="33"
+            android:targetSdkVersion="28" />
+  <permission android:name="com.google.restricted_assist_gesture.permission.RESTRICTED_ASSIST_GESTURE_PROVIDER"
+              android:protectionLevel="preinstalled|signature" />
+  <uses-permission android:name="com.google.restricted_assist_gesture.permission.RESTRICTED_ASSIST_GESTURE_PROVIDER" />
+  <uses-permission android:name="android.permission.ACCESS_CONTEXT_HUB" />
+  <uses-permission android:name="android.permission.CAPTURE_AUDIO_HOTWORD" />
+  <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+  <uses-permission android:name="android.permission.MANAGE_SOUND_TRIGGER" />
+  <uses-permission android:name="android.permission.MANAGE_USERS" />
+  <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_ROUTING" />
+  <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+  <uses-permission android:name="android.permission.READ_DEVICE_CONFIG" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+  <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+  <uses-permission android:name="android.permission.STATUS_BAR_SERVICE" />
+  <uses-permission android:name="android.permission.USER_ACTIVITY" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <uses-permission android:name="com.android.systemui.permission.PLUGIN" />
+  <uses-permission android:name="com.google.android.deskclock.permission.RECEIVE_ALERT_BROADCASTS" />
+  <uses-permission android:name="com.google.android.dialer.permission.RECEIVE_RING_STATE" />
+  <permission android:name="androidx.fragment.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              android:protectionLevel="signature" />
+  <uses-permission android:name="androidx.fragment.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+  <application android:label="@string/app_name"
+               android:icon="@drawable/motion_sense"
+               android:persistent="true"
+               android:allowBackup="true"
+               android:extractNativeLibs="false"
+               android:directBootAware="true"
+               android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+               android:usesNonSdkApi="true">
+    <service android:name="com.google.oslo.OsloOverlay"
+             android:exported="false">
+      <intent-filter>
+        <action android:name="com.android.systemui.action.PLUGIN_OVERLAY" />
+      </intent-filter>
+    </service>
+    <service android:name="com.google.oslo.OsloSensorManager"
+             android:exported="false">
+      <intent-filter>
+        <action android:name="com.android.systemui.action.PLUGIN_SENSOR_MANAGER" />
+      </intent-filter>
+    </service>
+    <service android:name="com.google.oslo.service.OsloService"
+             android:exported="true"
+             android:directBootAware="true" />
+    <activity android:label="@string/aware_tutorial_activity_label"
+              android:name="com.google.oslo.tutorial.AwareTutorialActivity">
+      <intent-filter>
+        <action android:name="com.google.android.settings.future.AWARE_TUTORIAL" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+    <receiver android:name="com.google.oslo.OsloBootCompletedReceiver"
+              android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

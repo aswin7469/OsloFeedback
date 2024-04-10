@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__20__0"
+                  android:duration="667"
+                  android:startOffset="0"
+                  android:valueFrom="M209.35 208.15 C204.4,220.31 204.66,224.75 204.66,224.75 "
+                  android:valueTo="M209.35 208.15 C204.4,220.31 204.66,224.75 204.66,224.75 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__20__1"
+                  android:duration="283"
+                  android:startOffset="667"
+                  android:valueFrom="M209.35 208.15 C204.4,220.31 204.66,224.75 204.66,224.75 "
+                  android:valueTo="M205.17 206.35 C203.29,216.01 204.66,224.75 204.66,224.75 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__20__2"
+                  android:duration="600"
+                  android:startOffset="950"
+                  android:valueFrom="M205.17 206.35 C203.29,216.01 204.66,224.75 204.66,224.75 "
+                  android:valueTo="M209.35 208.15 C204.4,220.31 204.66,224.75 204.66,224.75 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+</set>

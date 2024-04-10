@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:background="@drawable/aware_tutorial_phone_background"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:layout_gravity="center"
+             android:id="@id/aware_tutorial_phone_view_animation_view"
+             android:layout_width="@dimen/aware_tutorial_phone_screen_width"
+             android:layout_height="@dimen/aware_tutorial_phone_screen_height" />
+  <LinearLayout android:layout_gravity="center"
+                android:orientation="vertical"
+                android:id="@id/aware_tutorial_phone_view_practice_again_holder"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center"
+               android:id="@id/aware_tutorial_phone_view_practice_again_animation_view"
+               android:layout_width="@dimen/aware_tutorial_practice_again_icon_diameter"
+               android:layout_height="@dimen/aware_tutorial_practice_again_icon_diameter"
+               android:layout_margin="8.0dp" />
+    <TextView android:layout_gravity="center"
+              android:id="@id/aware_tutorial_phone_view_practice_again_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/aware_tutorial_confirm_practice_again_button_label"
+              style="@style/TextAppearance.AwareTutorial.PracticeAgainLabel" />
+  </LinearLayout>
+  <ImageView android:layout_gravity="center"
+             android:id="@id/aware_tutorial_phone_view_music_note"
+             android:layout_width="51.0dp"
+             android:layout_height="51.0dp" />
+</FrameLayout>

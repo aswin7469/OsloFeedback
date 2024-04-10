@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <attr name="alpha" formats="float" />
+  <attr name="font" formats="reference" />
+  <attr name="fontProviderAuthority" formats="string" />
+  <attr name="fontProviderCerts" formats="reference" />
+  <attr name="fontProviderFetchStrategy">
+    <enum name="async">1</enum>
+    <enum name="blocking">0</enum>
+  </attr>
+  <attr name="fontProviderFetchTimeout" formats="integer">
+    <enum name="forever">-1</enum>
+  </attr>
+  <attr name="fontProviderPackage" formats="string" />
+  <attr name="fontProviderQuery" formats="string" />
+  <attr name="fontProviderSystemFontFamily" formats="string" />
+  <attr name="fontStyle">
+    <enum name="italic">1</enum>
+    <enum name="normal">0</enum>
+  </attr>
+  <attr name="fontVariationSettings" formats="string" />
+  <attr name="fontWeight" formats="integer" />
+  <attr name="lStar" formats="float" />
+  <attr name="nestedScrollViewStyle" formats="reference" />
+  <attr name="queryPatterns" formats="reference" />
+  <attr name="shortcutMatchRequired" formats="bool" />
+  <attr name="ttcIndex" formats="integer" />
+  <attr name="useCaseIcon" formats="reference" />
+  <attr name="useCaseTitle" formats="string" />
+</resources>

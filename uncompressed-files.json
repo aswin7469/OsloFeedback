@@ -1,0 +1,41 @@
+{
+  "extensions": [
+    ".jpg",
+    ".mp3",
+    ".mp4",
+    ".png",
+    ".wav",
+    ".webp"
+  ],
+  "paths": [
+    "classes.dex",
+    "classes2.dex",
+    "res/drawable-hdpi-v4/notification_bg_low_normal.9.png",
+    "res/drawable-hdpi-v4/notification_bg_low_pressed.9.png",
+    "res/drawable-hdpi-v4/notification_bg_normal.9.png",
+    "res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png",
+    "res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png",
+    "res/drawable-mdpi-v4/notification_bg_low_normal.9.png",
+    "res/drawable-mdpi-v4/notification_bg_low_pressed.9.png",
+    "res/drawable-mdpi-v4/notification_bg_normal.9.png",
+    "res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png",
+    "res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png",
+    "res/drawable-nodpi-v4/aware_tutorial_use_case_icon_background.webp",
+    "res/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+    "res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
+    "res/drawable-xhdpi-v4/notification_bg_normal.9.png",
+    "res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
+    "res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
+    "res/drawable/motion_sense.png",
+    "res/raw/aware_tutorial_alarm_sound.ogg",
+    "res/raw/aware_tutorial_beat_1.ogg",
+    "res/raw/aware_tutorial_beat_2.ogg",
+    "res/raw/aware_tutorial_beat_3.ogg",
+    "res/raw/aware_tutorial_beat_4.ogg",
+    "res/raw/aware_tutorial_ringtone.ogg",
+    "res/raw/dismiss.wav",
+    "res/raw/next.wav",
+    "res/raw/previous.wav",
+    "resources.arsc"
+  ]
+}

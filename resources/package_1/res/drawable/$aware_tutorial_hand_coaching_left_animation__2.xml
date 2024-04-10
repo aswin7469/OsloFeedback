@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_left_animation__2__0"
+                  android:duration="150"
+                  android:startOffset="0"
+                  android:propertyName="translateXY"
+                  android:pathData="M 38.062,27.938C 38.062,27.938 38.062,27.938 38.062,27.938"
+                  android:propertyXName="translateX"
+                  android:propertyYName="translateY" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_left_animation__2__1"
+                  android:duration="476"
+                  android:startOffset="150"
+                  android:propertyName="translateXY"
+                  android:pathData="M 38.062,27.938C 38.062,27.938 37.15,27.403 38.062,27.938"
+                  android:propertyXName="translateX"
+                  android:propertyYName="translateY" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_left_animation__2__2"
+                  android:duration="341"
+                  android:startOffset="626"
+                  android:propertyName="translateXY"
+                  android:pathData="M 38.062,27.938C 40.623999999999995,29.441 38.062,27.938 38.062,27.938"
+                  android:propertyXName="translateX"
+                  android:propertyYName="translateY" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_left_animation__2__3"
+                  android:duration="650"
+                  android:startOffset="967"
+                  android:propertyName="translateXY"
+                  android:pathData="M 38.062,27.938C 38.062,27.938 38.062,27.938 38.062,27.938"
+                  android:propertyXName="translateX"
+                  android:propertyYName="translateY" />
+</set>

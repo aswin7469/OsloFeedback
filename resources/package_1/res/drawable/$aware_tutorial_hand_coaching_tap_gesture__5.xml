@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__5__0"
+                  android:duration="200"
+                  android:startOffset="0"
+                  android:valueFrom="-8"
+                  android:valueTo="-8"
+                  android:valueType="floatType"
+                  android:propertyName="rotation" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__5__1"
+                  android:duration="683"
+                  android:startOffset="200"
+                  android:valueFrom="-8"
+                  android:valueTo="-7"
+                  android:valueType="floatType"
+                  android:propertyName="rotation" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__5__2"
+                  android:duration="1083"
+                  android:startOffset="883"
+                  android:valueFrom="-7"
+                  android:valueTo="-8"
+                  android:valueType="floatType"
+                  android:propertyName="rotation" />
+</set>

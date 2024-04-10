@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_call_indeterminate_animation__2__0"
+                  android:duration="633"
+                  android:startOffset="0"
+                  android:valueFrom="M0 -25 C13.81,-25 25,-13.81 25,0 C25,13.81 13.81,25 0,25 C-13.81,25 -25,13.81 -25,0 C-25,-13.81 -13.81,-25 0,-25c "
+                  android:valueTo="M0 -82 C45.29,-82 82,-45.29 82,0 C82,45.29 45.29,82 0,82 C-45.29,82 -82,45.29 -82,0 C-82,-45.29 -45.29,-82 0,-82c "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+</set>

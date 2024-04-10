@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_right_animation__28__0"
+                  android:duration="50"
+                  android:startOffset="0"
+                  android:propertyName="translateXY"
+                  android:pathData="M -52.5,854.021C -52.5,854.021 -253.302,982.021 -52.5,854.021"
+                  android:propertyXName="translateX"
+                  android:propertyYName="translateY" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_right_animation__28__1"
+                  android:duration="950"
+                  android:startOffset="50"
+                  android:propertyName="translateXY"
+                  android:pathData="M -52.5,854.021C 148.302,726.021 488.802,660.021 494.5,854.021"
+                  android:propertyXName="translateX"
+                  android:propertyYName="translateY" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_right_animation__28__2"
+                  android:duration="617"
+                  android:startOffset="1000"
+                  android:propertyName="translateXY"
+                  android:pathData="M 494.5,854.021C 500.198,1048.021 494.5,854.021 494.5,854.021"
+                  android:propertyXName="translateX"
+                  android:propertyYName="translateY" />
+</set>

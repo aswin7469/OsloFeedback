@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="166.0dp"
+        android:width="166.0dp"
+        android:viewportWidth="166.0"
+        android:viewportHeight="166.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <group android:name="_R_G">
+    <group android:name="_R_G_L_3_G"
+           android:translateX="83.0"
+           android:translateY="83.0">
+      <path android:name="_R_G_L_3_G_D_0_P_0"
+            android:fillColor="#e8f0fe"
+            android:pathData=" M0 -25 C13.81,-25 25,-13.81 25,0 C25,13.81 13.81,25 0,25 C-13.81,25 -25,13.81 -25,0 C-25,-13.81 -13.81,-25 0,-25c "
+            android:fillAlpha="0.0"
+            android:fillType="nonZero" />
+    </group>
+    <group android:name="_R_G_L_2_G"
+           android:translateX="83.0"
+           android:translateY="84.5">
+      <path android:name="_R_G_L_2_G_D_0_P_0"
+            android:fillColor="#000000"
+            android:pathData=" M0 -27.5 C15.18,-27.5 27.5,-15.18 27.5,0 C27.5,15.18 15.18,27.5 0,27.5 C-15.18,27.5 -27.5,15.18 -27.5,0 C-27.5,-15.18 -15.18,-27.5 0,-27.5c "
+            android:fillAlpha="0.15"
+            android:fillType="nonZero" />
+    </group>
+    <group android:name="_R_G_L_1_G"
+           android:translateX="83.0"
+           android:translateY="83.0">
+      <path android:name="_R_G_L_1_G_D_0_P_0"
+            android:fillColor="#f8faff"
+            android:pathData=" M0 -27 C14.9,-27 27,-14.9 27,0 C27,14.9 14.9,27 0,27 C-14.9,27 -27,14.9 -27,0 C-27,-14.9 -14.9,-27 0,-27c "
+            android:fillAlpha="1.0"
+            android:fillType="nonZero" />
+    </group>
+    <group android:name="_R_G_L_0_G"
+           android:translateX="63.32"
+           android:translateY="62.845">
+      <path android:name="_R_G_L_0_G_D_0_P_0"
+            android:fillColor="#1a73e8"
+            android:pathData=" M31.68 12.76 C31.68,12.76 26.16,8.15 26.16,8.15 C26.16,8.15 24.61,9.98 24.61,9.98 C24.61,9.98 30.13,14.58 30.13,14.58 C30.13,14.58 31.68,12.76 31.68,12.76c  M14.74 9.98 C14.74,9.98 13.2,8.15 13.2,8.15 C13.2,8.15 7.68,12.74 7.68,12.74 C7.68,12.74 9.23,14.57 9.23,14.57 C9.23,14.57 14.74,9.98 14.74,9.98c  M20.28 15.47 C20.28,15.47 18.48,15.47 18.48,15.47 C18.48,15.47 18.48,22.62 18.48,22.62 C18.48,22.62 24.18,26.02 24.18,26.02 C24.18,26.02 25.08,24.55 25.08,24.55 C25.08,24.55 20.28,21.73 20.28,21.73 C20.28,21.73 20.28,15.47 20.28,15.47c  M19.68 10.71 C13.72,10.71 8.88,15.51 8.88,21.43 C8.88,27.35 13.7,32.16 19.68,32.16 C25.64,32.16 30.48,27.35 30.48,21.43 C30.48,15.51 25.64,10.71 19.68,10.71c  M19.68 29.77 C15.04,29.77 11.28,26.04 11.28,21.43 C11.28,16.82 15.04,13.09 19.68,13.09 C24.32,13.09 28.08,16.82 28.08,21.43 C28.08,26.04 24.32,29.77 19.68,29.77c "
+            android:fillAlpha="1.0"
+            android:fillType="nonZero" />
+    </group>
+  </group>
+  <group android:name="time_group" />
+</vector>

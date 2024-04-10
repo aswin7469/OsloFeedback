@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__3__0"
+                  android:duration="667"
+                  android:startOffset="0"
+                  android:valueFrom="M315.83 133.62 C315.83,133.62 315.39,138.41 315.39,138.41 C315.29,139.45 315.99,140.4 317.01,140.62 C317.01,140.62 318.87,141.01 318.87,141.01 "
+                  android:valueTo="M315.83 133.62 C315.83,133.62 315.39,138.41 315.39,138.41 C315.29,139.45 315.99,140.4 317.01,140.62 C317.01,140.62 318.87,141.01 318.87,141.01 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__3__1"
+                  android:duration="283"
+                  android:startOffset="667"
+                  android:valueFrom="M315.83 133.62 C315.83,133.62 315.39,138.41 315.39,138.41 C315.29,139.45 315.99,140.4 317.01,140.62 C317.01,140.62 318.87,141.01 318.87,141.01 "
+                  android:valueTo="M311.69 139.33 C311.69,139.33 311.32,143.36 311.32,143.36 C311.24,144.23 311.82,145.03 312.68,145.22 C312.68,145.22 314.25,145.55 314.25,145.55 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__3__2"
+                  android:duration="600"
+                  android:startOffset="950"
+                  android:valueFrom="M311.69 139.33 C311.69,139.33 311.32,143.36 311.32,143.36 C311.24,144.23 311.82,145.03 312.68,145.22 C312.68,145.22 314.25,145.55 314.25,145.55 "
+                  android:valueTo="M315.83 133.62 C315.83,133.62 315.39,138.41 315.39,138.41 C315.29,139.45 315.99,140.4 317.01,140.62 C317.01,140.62 318.87,141.01 318.87,141.01 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+</set>

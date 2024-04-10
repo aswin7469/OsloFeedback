@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__9__0"
+                  android:duration="667"
+                  android:startOffset="0"
+                  android:valueFrom="M289.18 148.08 C290.54,147.85 292.53,147.68 294.89,148.07 C296.74,148.38 298.26,148.93 299.35,149.44 "
+                  android:valueTo="M289.18 148.08 C290.54,147.85 292.53,147.68 294.89,148.07 C296.74,148.38 298.26,148.93 299.35,149.44 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__9__1"
+                  android:duration="283"
+                  android:startOffset="667"
+                  android:valueFrom="M289.18 148.08 C290.54,147.85 292.53,147.68 294.89,148.07 C296.74,148.38 298.26,148.93 299.35,149.44 "
+                  android:valueTo="M288.16 151.97 C289.4,151.77 291.22,151.61 293.36,151.97 C295.06,152.24 296.44,152.75 297.44,153.21 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+  <objectAnimator android:interpolator="@drawable/$$aware_tutorial_hand_coaching_tap_gesture__9__2"
+                  android:duration="600"
+                  android:startOffset="950"
+                  android:valueFrom="M288.16 151.97 C289.4,151.77 291.22,151.61 293.36,151.97 C295.06,152.24 296.44,152.75 297.44,153.21 "
+                  android:valueTo="M289.18 148.08 C290.54,147.85 292.53,147.68 294.89,148.07 C296.74,148.38 298.26,148.93 299.35,149.44 "
+                  android:valueType="pathType"
+                  android:propertyName="pathData" />
+</set>
