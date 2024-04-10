@@ -15,7 +15,7 @@
         .end subannotation,
         .subannotation Lcom/android/systemui/plugins/annotations/Requires;
             target = Lcom/android/systemui/plugins/DarkIconDispatcher$DarkReceiver;
-            version = 0x2
+            version = 0x3
         .end subannotation,
         .subannotation Lcom/android/systemui/plugins/annotations/Requires;
             target = Lcom/android/systemui/plugins/DarkIconDispatcher;
