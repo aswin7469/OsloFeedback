@@ -399,8 +399,8 @@
     .end annotation
 
     .line 137
-    .local p1, "areas":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/graphics/Rect;>;"
-    invoke-static {p1, p0, p3}, Lcom/android/systemui/plugins/DarkIconDispatcher;->getTint(Ljava/util/ArrayList;Landroid/view/View;I)I
+    .local p1, "areas":Ljava/util/Collection;, "Ljava/util/Collection<Landroid/graphics/Rect;>;"
+    invoke-static {p1, p0, p3}, Lcom/android/systemui/plugins/DarkIconDispatcher;->getTint(Ljava/util/Collection;Landroid/view/View;I)I
 
     move-result v0
 
