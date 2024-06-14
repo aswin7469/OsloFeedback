@@ -1,6 +1,6 @@
 .class public abstract Lcom/android/systemui/plugins/PluginsModule;
 .super Ljava/lang/Object;
-.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 
 # static fields
@@ -15,9 +15,12 @@
 .method public constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     return-void
+    .line 5
 .end method
 
 .method public static providePluginInstanceManagerFactory(Landroid/content/Context;Landroid/content/pm/PackageManager;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Landroid/app/NotificationManager;Lcom/android/systemui/shared/plugins/PluginEnabler;Ljava/util/List;Lcom/android/systemui/shared/plugins/PluginInstance$Factory;)Lcom/android/systemui/shared/plugins/PluginActionManager$Factory;
@@ -198,7 +201,7 @@
     move-result-object p0
 
     .line 5
-    const v0, 0x7f030048    # @array/config_pluginAllowlist
+    const v0, 0x7f030049    # @array/config_pluginAllowlist
 
     .line 6
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;

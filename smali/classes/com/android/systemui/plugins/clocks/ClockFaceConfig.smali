@@ -1,6 +1,6 @@
 .class public final Lcom/android/systemui/plugins/clocks/ClockFaceConfig;
 .super Ljava/lang/Object;
-.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 
 # instance fields
@@ -296,47 +296,35 @@
     move-result v0
 
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    const/16 v1, 0x1f
 
     .line 8
-    iget-boolean v1, p0, Lcom/android/systemui/plugins/clocks/ClockFaceConfig;->hasCustomWeatherDataDisplay:Z
+    mul-int/2addr v0, v1
 
     .line 10
-    const/4 v2, 0x1
+    iget-boolean v2, p0, Lcom/android/systemui/plugins/clocks/ClockFaceConfig;->hasCustomWeatherDataDisplay:Z
 
-    .line 12
-    if-eqz v1, :cond_0
+    .line 11
+    invoke-static {v0, v1, v2}, Landroidx/compose/animation/TransitionData$$ExternalSyntheticOutline0;->m(IIZ)I
 
     .line 13
-    move v1, v2
-
-    .line 15
-    :cond_0
-    add-int/2addr v0, v1
+    move-result v0
 
     .line 16
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 17
     iget-boolean p0, p0, Lcom/android/systemui/plugins/clocks/ClockFaceConfig;->hasCustomPositionUpdatedAnimation:Z
 
-    .line 19
-    if-eqz p0, :cond_1
+    .line 17
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    .line 21
-    goto :goto_0
+    .line 19
+    move-result p0
+
+    .line 22
+    add-int/2addr p0, v0
 
     .line 23
-    :cond_1
-    move v2, p0
-
+    return p0
     .line 24
-    :goto_0
-    add-int/2addr v0, v2
-
-    .line 25
-    return v0
-    .line 26
 .end method
 
 .method public toString()Ljava/lang/String;

@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/android/systemui/plugins/VolumeDialogController$Callbacks;
 .super Ljava/lang/Object;
-.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 
 # annotations
@@ -51,4 +51,7 @@
 .end method
 
 .method public abstract onStateChanged(Lcom/android/systemui/plugins/VolumeDialogController$State;)V
+.end method
+
+.method public abstract onVolumeChangedFromKey()V
 .end method

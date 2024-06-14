@@ -1,6 +1,6 @@
 .class public final Lcom/android/systemui/plugins/clocks/ClockConfig;
 .super Ljava/lang/Object;
-.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 
 # instance fields
@@ -420,7 +420,7 @@
 .end method
 
 .method public hashCode()I
-    .locals 4
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lcom/android/systemui/plugins/clocks/ClockConfig;->id:Ljava/lang/String;
@@ -459,41 +459,26 @@
     iget-boolean v2, p0, Lcom/android/systemui/plugins/clocks/ClockConfig;->useAlternateSmartspaceAODTransition:Z
 
     .line 23
-    const/4 v3, 0x1
+    invoke-static {v0, v1, v2}, Landroidx/compose/animation/TransitionData$$ExternalSyntheticOutline0;->m(IIZ)I
 
     .line 25
-    if-eqz v2, :cond_0
-
-    .line 26
-    move v2, v3
+    move-result v0
 
     .line 28
-    :cond_0
-    add-int/2addr v0, v2
-
-    .line 29
-    mul-int/2addr v0, v1
-
-    .line 30
     iget-boolean p0, p0, Lcom/android/systemui/plugins/clocks/ClockConfig;->isReactiveToTone:Z
 
-    .line 31
-    if-eqz p0, :cond_1
+    .line 29
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    .line 33
-    goto :goto_0
+    .line 31
+    move-result p0
+
+    .line 34
+    add-int/2addr p0, v0
 
     .line 35
-    :cond_1
-    move v3, p0
-
+    return p0
     .line 36
-    :goto_0
-    add-int/2addr v0, v3
-
-    .line 37
-    return v0
-    .line 38
 .end method
 
 .method public final isReactiveToTone()Z
@@ -535,7 +520,7 @@
     const-string v6, ", description="
 
     .line 16
-    invoke-static {v4, v0, v5, v1, v6}, Lcom/android/keyguard/logging/KeyguardUpdateMonitorLogger$logServiceStateIntent$2$$ExternalSyntheticOutline0;->m(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4, v0, v5, v1, v6}, Lcom/android/compose/PlatformSliderColors$$ExternalSyntheticOutline0;->m(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 18
     move-result-object v0

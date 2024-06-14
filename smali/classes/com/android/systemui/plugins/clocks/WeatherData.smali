@@ -1,6 +1,6 @@
 .class public final Lcom/android/systemui/plugins/clocks/WeatherData;
 .super Ljava/lang/Object;
-.source "go/retraceme db998610a30546cfb750cb42d68186f67be36966c6ca98c5d0200b062af37cac"
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 
 # static fields
@@ -492,53 +492,46 @@
     iget-boolean v0, p0, Lcom/android/systemui/plugins/clocks/WeatherData;->useCelsius:Z
 
     .line 19
-    if-eqz v0, :cond_0
+    invoke-static {v2, v1, v0}, Landroidx/compose/animation/TransitionData$$ExternalSyntheticOutline0;->m(IIZ)I
 
     .line 21
-    const/4 v0, 0x1
-
-    .line 23
-    :cond_0
-    add-int/2addr v2, v0
-
-    .line 24
-    mul-int/2addr v2, v1
-
-    .line 25
-    iget v0, p0, Lcom/android/systemui/plugins/clocks/WeatherData;->temperature:I
-
-    .line 26
-    invoke-static {v0, v2, v1}, Landroidx/compose/animation/graphics/vector/ObjectAnimator$$ExternalSyntheticOutline0;->m(III)I
-
-    .line 28
     move-result v0
 
-    .line 31
+    .line 24
+    iget v2, p0, Lcom/android/systemui/plugins/clocks/WeatherData;->temperature:I
+
+    .line 25
+    invoke-static {v2, v0, v1}, Landroidx/compose/animation/graphics/vector/ObjectAnimator$$ExternalSyntheticOutline0;->m(III)I
+
+    .line 27
+    move-result v0
+
+    .line 30
     iget-object p0, p0, Lcom/android/systemui/plugins/clocks/WeatherData;->touchAction:Lkotlin/jvm/functions/Function1;
 
-    .line 32
-    if-nez p0, :cond_1
+    .line 31
+    if-nez p0, :cond_0
 
-    .line 34
+    .line 33
     const/4 p0, 0x0
 
-    .line 36
+    .line 35
     goto :goto_0
 
-    .line 37
-    :cond_1
+    .line 36
+    :cond_0
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
-    .line 38
+    .line 37
     move-result p0
 
-    .line 41
+    .line 40
     :goto_0
     add-int/2addr v0, p0
 
-    .line 42
+    .line 41
     return v0
-    .line 43
+    .line 42
 .end method
 
 .method public toString()Ljava/lang/String;
