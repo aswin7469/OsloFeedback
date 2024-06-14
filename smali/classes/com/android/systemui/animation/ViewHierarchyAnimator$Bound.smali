@@ -1,83 +1,18 @@
 .class abstract enum Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
 .super Ljava/lang/Enum;
-.source "ViewHierarchyAnimator.kt"
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/animation/ViewHierarchyAnimator;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x401a
-    name = "Bound"
-.end annotation
-
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$LEFT;,
-        Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$TOP;,
-        Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$RIGHT;,
-        Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$BOTTOM;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;",
-        ">;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0006\u0008\u0082\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0017\u0008\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0010\u0010\u000b\u001a\u00020\u00052\u0006\u0010\u000c\u001a\u00020\rH&J\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u0010\u001a\u00020\u0005H&R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nj\u0002\u0008\u0011j\u0002\u0008\u0012j\u0002\u0008\u0013j\u0002\u0008\u0014\u00a8\u0006\u0015"
-    }
-    d2 = {
-        "Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;",
-        "",
-        "label",
-        "",
-        "overrideTag",
-        "",
-        "(Ljava/lang/String;ILjava/lang/String;I)V",
-        "getLabel",
-        "()Ljava/lang/String;",
-        "getOverrideTag",
-        "()I",
-        "getValue",
-        "view",
-        "Landroid/view/View;",
-        "setValue",
-        "",
-        "value",
-        "LEFT",
-        "TOP",
-        "RIGHT",
-        "BOTTOM",
-        "frameworks__base__packages__SystemUI__animation__android_common__SystemUIAnimationLib"
-    }
-    k = 0x1
-    mv = {
-        0x1,
-        0x6,
-        0x0
-    }
-    xi = 0x30
-.end annotation
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+.field public static final synthetic $VALUES:[Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
 
-.field public static final enum BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+.field public static final enum BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$BOTTOM;
 
-.field public static final enum LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+.field public static final enum LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$LEFT;
 
-.field public static final enum RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+.field public static final enum RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$RIGHT;
 
-.field public static final enum TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+.field public static final enum TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$TOP;
 
 
 # instance fields
@@ -87,174 +22,201 @@
 
 
 # direct methods
-.method private static final synthetic $values()[Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-    .locals 3
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 11
 
-    .line 845
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$LEFT;
+    .line 1
+    const/4 v0, 0x3
 
-    const-string v1, "LEFT"
+    .line 2
+    const/4 v1, 0x2
 
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$LEFT;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    .line 854
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$TOP;
-
-    const-string v1, "TOP"
-
+    .line 3
     const/4 v2, 0x1
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$TOP;-><init>(Ljava/lang/String;I)V
+    .line 4
+    const/4 v3, 0x0
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+    .line 5
+    new-instance v4, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$LEFT;
 
-    .line 863
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$RIGHT;
+    .line 6
+    const v5, 0x7f0a07ec    # @id/tag_override_left
 
-    const-string v1, "RIGHT"
+    .line 8
+    const-string v6, "LEFT"
 
-    const/4 v2, 0x2
+    .line 11
+    const-string v7, "left"
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$RIGHT;-><init>(Ljava/lang/String;I)V
+    .line 13
+    invoke-direct {v4, v6, v3, v5, v7}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+    .line 15
+    sput-object v4, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$LEFT;
 
-    .line 872
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$BOTTOM;
+    .line 18
+    new-instance v5, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$TOP;
 
-    const-string v1, "BOTTOM"
+    .line 20
+    const v6, 0x7f0a07ee    # @id/tag_override_top
 
-    const/4 v2, 0x3
+    .line 22
+    const-string v7, "TOP"
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$BOTTOM;-><init>(Ljava/lang/String;I)V
+    .line 25
+    const-string v8, "top"
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+    .line 27
+    invoke-direct {v5, v7, v2, v6, v8}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
-    invoke-static {}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->$values()[Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+    .line 29
+    sput-object v5, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$TOP;
 
-    move-result-object v0
+    .line 32
+    new-instance v6, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$RIGHT;
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->$VALUES:[Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+    .line 34
+    const v7, 0x7f0a07ed    # @id/tag_override_right
 
+    .line 36
+    const-string v8, "RIGHT"
+
+    .line 39
+    const-string v9, "right"
+
+    .line 41
+    invoke-direct {v6, v8, v1, v7, v9}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+
+    .line 43
+    sput-object v6, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$RIGHT;
+
+    .line 46
+    new-instance v7, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$BOTTOM;
+
+    .line 48
+    const v8, 0x7f0a07eb    # @id/tag_override_bottom
+
+    .line 50
+    const-string v9, "BOTTOM"
+
+    .line 53
+    const-string v10, "bottom"
+
+    .line 55
+    invoke-direct {v7, v9, v0, v8, v10}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+
+    .line 57
+    sput-object v7, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$BOTTOM;
+
+    .line 60
+    const/4 v8, 0x4
+
+    .line 62
+    new-array v8, v8, [Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+
+    .line 63
+    aput-object v4, v8, v3
+
+    .line 65
+    aput-object v5, v8, v2
+
+    .line 67
+    aput-object v6, v8, v1
+
+    .line 69
+    aput-object v7, v8, v0
+
+    .line 71
+    sput-object v8, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->$VALUES:[Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+
+    .line 73
+    invoke-static {v8}, Lkotlin/enums/EnumEntriesKt;->enumEntries([Ljava/lang/Enum;)Lkotlin/enums/EnumEntries;
+
+    .line 75
     return-void
+    .line 78
 .end method
 
-.method private constructor <init>(Ljava/lang/String;ILjava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;IILjava/lang/String;)V
     .locals 0
-    .param p1, "$enum$name"    # Ljava/lang/String;
-    .param p2, "$enum$ordinal"    # I
-    .param p3, "label"    # Ljava/lang/String;
-    .param p4, "overrideTag"    # I
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "I)V"
-        }
-    .end annotation
 
-    .line 844
+    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    iput-object p3, p0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->label:Ljava/lang/String;
+    .line 2
+    iput-object p4, p0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->label:Ljava/lang/String;
 
-    iput p4, p0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->overrideTag:I
+    .line 5
+    iput p3, p0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->overrideTag:I
 
+    .line 7
     return-void
-.end method
-
-.method public synthetic constructor <init>(Ljava/lang/String;ILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
-
-    return-void
+    .line 9
 .end method
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
     .locals 1
 
+    .line 1
     const-class v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
 
+    .line 2
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    move-result-object v0
+    .line 4
+    move-result-object p0
 
-    check-cast v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+    .line 7
+    check-cast p0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
 
-    return-object v0
+    .line 8
+    return-object p0
+    .line 10
 .end method
 
 .method public static values()[Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->$VALUES:[Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
 
+    .line 2
     invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
+    .line 4
     move-result-object v0
 
+    .line 7
     check-cast v0, [Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
 
+    .line 8
     return-object v0
+    .line 10
 .end method
 
 
 # virtual methods
 .method public final getLabel()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
-    .line 844
-    iget-object v0, p0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->label:Ljava/lang/String;
+    .line 1
+    iget-object p0, p0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->label:Ljava/lang/String;
 
-    return-object v0
+    .line 2
+    return-object p0
+    .line 4
 .end method
 
 .method public final getOverrideTag()I
-    .locals 1
+    .locals 0
 
-    .line 844
-    iget v0, p0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->overrideTag:I
+    .line 1
+    iget p0, p0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->overrideTag:I
 
-    return v0
+    .line 2
+    return p0
+    .line 4
 .end method
 
 .method public abstract getValue(Landroid/view/View;)I

@@ -1,259 +1,222 @@
 .class public final Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;
 .super Ljava/lang/Object;
-.source "DialogLaunchAnimator.kt"
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 # interfaces
-.implements Lcom/android/systemui/animation/LaunchAnimator$Controller;
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/animation/AnimatedDialog;->startAnimation(ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = null
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000/\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0003*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\t\u001a\u00020\nH\u0016J\u0010\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000eH\u0016J \u0010\u000f\u001a\u00020\u000c2\u0006\u0010\u0010\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0012H\u0016J\u0010\u0010\u0014\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000eH\u0016R$\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0002\u001a\u00020\u00038V@VX\u0096\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008\u00a8\u0006\u0015"
-    }
-    d2 = {
-        "com/android/systemui/animation/AnimatedDialog$startAnimation$controller$1",
-        "Lcom/android/systemui/animation/LaunchAnimator$Controller;",
-        "value",
-        "Landroid/view/ViewGroup;",
-        "launchContainer",
-        "getLaunchContainer",
-        "()Landroid/view/ViewGroup;",
-        "setLaunchContainer",
-        "(Landroid/view/ViewGroup;)V",
-        "createAnimatorState",
-        "Lcom/android/systemui/animation/LaunchAnimator$State;",
-        "onLaunchAnimationEnd",
-        "",
-        "isExpandingFullyAbove",
-        "",
-        "onLaunchAnimationProgress",
-        "state",
-        "progress",
-        "",
-        "linearProgress",
-        "onLaunchAnimationStart",
-        "frameworks__base__packages__SystemUI__animation__android_common__SystemUIAnimationLib"
-    }
-    k = 0x1
-    mv = {
-        0x1,
-        0x6,
-        0x0
-    }
-    xi = 0x30
-.end annotation
+.implements Lcom/android/systemui/animation/TransitionAnimator$Controller;
 
 
 # instance fields
-.field final synthetic $endState:Lcom/android/systemui/animation/LaunchAnimator$State;
+.field public final synthetic $endController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
 
-.field final synthetic $endViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+.field public final synthetic $endState:Lcom/android/systemui/animation/TransitionAnimator$State;
 
-.field final synthetic $onLaunchAnimationEnd:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0<",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic $onLaunchAnimationEnd:Lkotlin/jvm/functions/Function0;
 
-.field final synthetic $onLaunchAnimationStart:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0<",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic $onLaunchAnimationStart:Lkotlin/jvm/functions/Function0;
 
-.field final synthetic $startViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+.field public final synthetic $startController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
+
+.field public final synthetic this$0:Lcom/android/systemui/animation/AnimatedDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lcom/android/systemui/animation/LaunchAnimator$State;)V
+.method public constructor <init>(Lcom/android/systemui/animation/TransitionAnimator$Controller;Lcom/android/systemui/animation/TransitionAnimator$Controller;Lkotlin/jvm/functions/Function0;Lcom/android/systemui/animation/AnimatedDialog;Lkotlin/jvm/functions/Function0;Lcom/android/systemui/animation/TransitionAnimator$State;)V
     .locals 0
-    .param p1, "$startViewController"    # Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
-    .param p2, "$endViewController"    # Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
-    .param p3, "$onLaunchAnimationStart"    # Lkotlin/jvm/functions/Function0;
-    .param p4, "$onLaunchAnimationEnd"    # Lkotlin/jvm/functions/Function0;
-    .param p5, "$endState"    # Lcom/android/systemui/animation/LaunchAnimator$State;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;",
-            "Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;",
-            "Lkotlin/jvm/functions/Function0<",
-            "Lkotlin/Unit;",
-            ">;",
-            "Lkotlin/jvm/functions/Function0<",
-            "Lkotlin/Unit;",
-            ">;",
-            "Lcom/android/systemui/animation/LaunchAnimator$State;",
-            ")V"
-        }
-    .end annotation
 
-    iput-object p1, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
-
-    iput-object p2, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
-
-    iput-object p3, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$onLaunchAnimationStart:Lkotlin/jvm/functions/Function0;
-
-    iput-object p4, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$onLaunchAnimationEnd:Lkotlin/jvm/functions/Function0;
-
-    iput-object p5, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endState:Lcom/android/systemui/animation/LaunchAnimator$State;
-
-    .line 713
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    iput-object p1, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
+
+    .line 5
+    iput-object p2, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
+
+    .line 7
+    iput-object p3, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$onLaunchAnimationStart:Lkotlin/jvm/functions/Function0;
+
+    .line 9
+    iput-object p4, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->this$0:Lcom/android/systemui/animation/AnimatedDialog;
+
+    .line 11
+    iput-object p5, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$onLaunchAnimationEnd:Lkotlin/jvm/functions/Function0;
+
+    .line 13
+    iput-object p6, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endState:Lcom/android/systemui/animation/TransitionAnimator$State;
+
+    .line 15
     return-void
+    .line 17
 .end method
 
 
 # virtual methods
-.method public createAnimatorState()Lcom/android/systemui/animation/LaunchAnimator$State;
-    .locals 1
+.method public final createAnimatorState()Lcom/android/systemui/animation/TransitionAnimator$State;
+    .locals 0
 
-    .line 722
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+    .line 1
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
 
-    invoke-virtual {v0}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->createAnimatorState()Lcom/android/systemui/animation/LaunchAnimator$State;
+    .line 2
+    invoke-interface {p0}, Lcom/android/systemui/animation/TransitionAnimator$Controller;->createAnimatorState()Lcom/android/systemui/animation/TransitionAnimator$State;
 
-    move-result-object v0
+    .line 4
+    move-result-object p0
 
-    return-object v0
+    .line 7
+    return-object p0
+    .line 8
 .end method
 
-.method public getLaunchContainer()Landroid/view/ViewGroup;
-    .locals 1
+.method public final getTransitionContainer()Landroid/view/ViewGroup;
+    .locals 0
 
-    .line 715
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+    .line 1
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
 
-    invoke-virtual {v0}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->getLaunchContainer()Landroid/view/ViewGroup;
+    .line 2
+    invoke-interface {p0}, Lcom/android/systemui/animation/TransitionAnimator$Controller;->getTransitionContainer()Landroid/view/ViewGroup;
 
-    move-result-object v0
+    .line 4
+    move-result-object p0
 
-    return-object v0
+    .line 7
+    return-object p0
+    .line 8
 .end method
 
-.method public onLaunchAnimationEnd(Z)V
-    .locals 1
-    .param p1, "isExpandingFullyAbove"    # Z
+.method public final onTransitionAnimationEnd(Z)V
+    .locals 4
 
-    .line 736
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+    .line 1
+    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->this$0:Lcom/android/systemui/animation/AnimatedDialog;
 
-    invoke-virtual {v0, p1}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->onLaunchAnimationEnd(Z)V
+    .line 2
+    iget-object v0, v0, Lcom/android/systemui/animation/AnimatedDialog;->dialog:Landroid/app/Dialog;
 
-    .line 737
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+    .line 4
+    invoke-virtual {v0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
 
-    invoke-virtual {v0, p1}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->onLaunchAnimationEnd(Z)V
+    .line 6
+    move-result-object v0
 
-    .line 739
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$onLaunchAnimationEnd:Lkotlin/jvm/functions/Function0;
+    .line 9
+    invoke-virtual {v0}, Landroid/content/Context;->getMainExecutor()Ljava/util/concurrent/Executor;
 
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    .line 10
+    move-result-object v0
 
-    .line 740
+    .line 13
+    new-instance v1, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1$onTransitionAnimationEnd$1;
+
+    .line 14
+    iget-object v2, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
+
+    .line 16
+    iget-object v3, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$onLaunchAnimationEnd:Lkotlin/jvm/functions/Function0;
+
+    .line 18
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
+
+    .line 20
+    invoke-direct {v1, p0, p1, v2, v3}, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1$onTransitionAnimationEnd$1;-><init>(Lcom/android/systemui/animation/TransitionAnimator$Controller;ZLcom/android/systemui/animation/TransitionAnimator$Controller;Lkotlin/jvm/functions/Function0;)V
+
+    .line 22
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    .line 25
     return-void
+    .line 28
 .end method
 
-.method public onLaunchAnimationProgress(Lcom/android/systemui/animation/LaunchAnimator$State;FF)V
-    .locals 2
-    .param p1, "state"    # Lcom/android/systemui/animation/LaunchAnimator$State;
-    .param p2, "progress"    # F
-    .param p3, "linearProgress"    # F
+.method public final onTransitionAnimationProgress(Lcom/android/systemui/animation/TransitionAnimator$State;FF)V
+    .locals 1
 
-    const-string v0, "state"
+    .line 1
+    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    invoke-interface {v0, p1, p2, p3}, Lcom/android/systemui/animation/TransitionAnimator$Controller;->onTransitionAnimationProgress(Lcom/android/systemui/animation/TransitionAnimator$State;FF)V
 
-    .line 747
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+    .line 4
+    iget-boolean v0, p1, Lcom/android/systemui/animation/TransitionAnimator$State;->visible:Z
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->onLaunchAnimationProgress(Lcom/android/systemui/animation/LaunchAnimator$State;FF)V
-
-    .line 750
-    invoke-virtual {p1}, Lcom/android/systemui/animation/LaunchAnimator$State;->getVisible()Z
-
-    move-result v0
-
+    .line 7
     xor-int/lit8 v0, v0, 0x1
 
-    invoke-virtual {p1, v0}, Lcom/android/systemui/animation/LaunchAnimator$State;->setVisible(Z)V
+    .line 9
+    iput-boolean v0, p1, Lcom/android/systemui/animation/TransitionAnimator$State;->visible:Z
 
-    .line 751
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+    .line 11
+    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->onLaunchAnimationProgress(Lcom/android/systemui/animation/LaunchAnimator$State;FF)V
+    .line 13
+    invoke-interface {v0, p1, p2, p3}, Lcom/android/systemui/animation/TransitionAnimator$Controller;->onTransitionAnimationProgress(Lcom/android/systemui/animation/TransitionAnimator$State;FF)V
 
-    .line 759
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+    .line 15
+    instance-of p1, v0, Lcom/android/systemui/animation/GhostedViewTransitionAnimatorController;
 
-    iget-object v1, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endState:Lcom/android/systemui/animation/LaunchAnimator$State;
+    .line 18
+    if-eqz p1, :cond_0
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->fillGhostedViewState(Lcom/android/systemui/animation/LaunchAnimator$State;)V
+    .line 20
+    check-cast v0, Lcom/android/systemui/animation/GhostedViewTransitionAnimatorController;
 
-    .line 760
+    .line 22
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endState:Lcom/android/systemui/animation/TransitionAnimator$State;
+
+    .line 24
+    invoke-virtual {v0, p0}, Lcom/android/systemui/animation/GhostedViewTransitionAnimatorController;->fillGhostedViewState(Lcom/android/systemui/animation/TransitionAnimator$State;)V
+
+    .line 26
+    :cond_0
     return-void
+    .line 29
 .end method
 
-.method public onLaunchAnimationStart(Z)V
+.method public final onTransitionAnimationStart(Z)V
     .locals 1
-    .param p1, "isExpandingFullyAbove"    # Z
 
-    .line 729
+    .line 1
     iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$onLaunchAnimationStart:Lkotlin/jvm/functions/Function0;
 
+    .line 2
     invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    .line 731
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+    .line 4
+    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
 
-    invoke-virtual {v0, p1}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->onLaunchAnimationStart(Z)V
+    .line 7
+    invoke-interface {v0, p1}, Lcom/android/systemui/animation/TransitionAnimator$Controller;->onTransitionAnimationStart(Z)V
 
-    .line 732
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+    .line 9
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
 
-    invoke-virtual {v0, p1}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->onLaunchAnimationStart(Z)V
+    .line 12
+    invoke-interface {p0, p1}, Lcom/android/systemui/animation/TransitionAnimator$Controller;->onTransitionAnimationStart(Z)V
 
-    .line 733
+    .line 14
     return-void
+    .line 17
 .end method
 
-.method public setLaunchContainer(Landroid/view/ViewGroup;)V
+.method public final setTransitionContainer(Landroid/view/ViewGroup;)V
     .locals 1
-    .param p1, "value"    # Landroid/view/ViewGroup;
 
-    const-string v0, "value"
+    .line 1
+    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    invoke-interface {v0, p1}, Lcom/android/systemui/animation/TransitionAnimator$Controller;->setTransitionContainer(Landroid/view/ViewGroup;)V
 
-    .line 717
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$startViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
+    .line 4
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endController:Lcom/android/systemui/animation/TransitionAnimator$Controller;
 
-    invoke-virtual {v0, p1}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->setLaunchContainer(Landroid/view/ViewGroup;)V
+    .line 7
+    invoke-interface {p0, p1}, Lcom/android/systemui/animation/TransitionAnimator$Controller;->setTransitionContainer(Landroid/view/ViewGroup;)V
 
-    .line 718
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$startAnimation$controller$1;->$endViewController:Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;
-
-    invoke-virtual {v0, p1}, Lcom/android/systemui/animation/GhostedViewLaunchAnimatorController;->setLaunchContainer(Landroid/view/ViewGroup;)V
-
-    .line 719
+    .line 9
     return-void
+    .line 12
 .end method

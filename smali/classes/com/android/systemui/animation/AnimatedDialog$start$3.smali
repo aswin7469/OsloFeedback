@@ -1,45 +1,33 @@
-.class final synthetic Lcom/android/systemui/animation/AnimatedDialog$start$3;
+.class public final synthetic Lcom/android/systemui/animation/AnimatedDialog$start$3;
 .super Ljava/lang/Object;
-.source "DialogLaunchAnimator.kt"
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 # interfaces
 .implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/animation/AnimatedDialog;->start()V
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1000
-    name = null
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    k = 0x3
-    mv = {
-        0x1,
-        0x6,
-        0x0
-    }
-    xi = 0x30
-.end annotation
-
-
 # instance fields
-.field final synthetic $tmp0:Lcom/android/systemui/animation/AnimatedDialog;
+.field public final synthetic $r8$classId:I
+
+.field public final synthetic $tmp0:Lcom/android/systemui/animation/AnimatedDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/animation/AnimatedDialog;)V
+.method public synthetic constructor <init>(Lcom/android/systemui/animation/AnimatedDialog;I)V
     .locals 0
 
+    .line 1
+    iput p2, p0, Lcom/android/systemui/animation/AnimatedDialog$start$3;->$r8$classId:I
+
+    .line 2
     iput-object p1, p0, Lcom/android/systemui/animation/AnimatedDialog$start$3;->$tmp0:Lcom/android/systemui/animation/AnimatedDialog;
 
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
     return-void
+    .line 9
 .end method
 
 
@@ -47,10 +35,49 @@
 .method public final run()V
     .locals 1
 
-    .line 506
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$start$3;->$tmp0:Lcom/android/systemui/animation/AnimatedDialog;
+    .line 1
+    iget v0, p0, Lcom/android/systemui/animation/AnimatedDialog$start$3;->$r8$classId:I
 
-    invoke-virtual {v0}, Lcom/android/systemui/animation/AnimatedDialog;->onDialogDismissed()V
+    .line 2
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog$start$3;->$tmp0:Lcom/android/systemui/animation/AnimatedDialog;
+
+    .line 7
+    invoke-virtual {p0}, Lcom/android/systemui/animation/AnimatedDialog;->onDialogDismissed()V
+
+    .line 9
     return-void
+
+    .line 12
+    :pswitch_0
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog$start$3;->$tmp0:Lcom/android/systemui/animation/AnimatedDialog;
+
+    .line 13
+    invoke-virtual {p0}, Lcom/android/systemui/animation/AnimatedDialog;->moveSourceDrawingToDialog()V
+
+    .line 15
+    return-void
+
+    .line 18
+    :pswitch_1
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog$start$3;->$tmp0:Lcom/android/systemui/animation/AnimatedDialog;
+
+    .line 19
+    invoke-virtual {p0}, Lcom/android/systemui/animation/AnimatedDialog;->onDialogDismissed()V
+
+    .line 21
+    return-void
+
+    .line 24
+    nop
+
+    .line 25
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+    .line 26
 .end method

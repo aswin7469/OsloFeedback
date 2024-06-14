@@ -1,285 +1,182 @@
 .class public final enum Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 .super Ljava/lang/Enum;
-.source "ViewHierarchyAnimator.kt"
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/animation/ViewHierarchyAnimator;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4019
-    name = "Hotspot"
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;",
-        ">;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u000b\u0008\u0086\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000b\u00a8\u0006\u000c"
-    }
-    d2 = {
-        "Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;",
-        "",
-        "(Ljava/lang/String;I)V",
-        "CENTER",
-        "LEFT",
-        "TOP_LEFT",
-        "TOP",
-        "TOP_RIGHT",
-        "RIGHT",
-        "BOTTOM_RIGHT",
-        "BOTTOM",
-        "BOTTOM_LEFT",
-        "frameworks__base__packages__SystemUI__animation__android_common__SystemUIAnimationLib"
-    }
-    k = 0x1
-    mv = {
-        0x1,
-        0x6,
-        0x0
-    }
-    xi = 0x30
-.end annotation
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-.field public static final enum BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-.field public static final enum BOTTOM_LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-.field public static final enum BOTTOM_RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-.field public static final enum CENTER:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-.field public static final enum LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-.field public static final enum RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+.field public static final synthetic $VALUES:[Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
 .field public static final enum TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-.field public static final enum TOP_LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-.field public static final enum TOP_RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
 
 # direct methods
-.method private static final synthetic $values()[Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-    .locals 3
-
-    const/16 v0, 0x9
-
-    new-array v0, v0, [Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->CENTER:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->TOP_LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->TOP_RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    const/4 v2, 0x4
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    const/4 v2, 0x5
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->BOTTOM_RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    const/4 v2, 0x6
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    const/4 v2, 0x7
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->BOTTOM_LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    const/16 v2, 0x8
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 11
 
-    .line 841
+    .line 1
     new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
+    .line 2
     const-string v1, "CENTER"
 
+    .line 4
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;-><init>(Ljava/lang/String;I)V
+    .line 6
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->CENTER:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 7
+    new-instance v1, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 10
+    const-string v2, "LEFT"
 
-    const-string v1, "LEFT"
+    .line 12
+    const/4 v3, 0x1
 
-    const/4 v2, 0x1
+    .line 14
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;-><init>(Ljava/lang/String;I)V
+    .line 15
+    new-instance v2, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 18
+    const-string v3, "TOP_LEFT"
 
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 20
+    const/4 v4, 0x2
 
-    const-string v1, "TOP_LEFT"
+    .line 22
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    const/4 v2, 0x2
+    .line 23
+    new-instance v3, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;-><init>(Ljava/lang/String;I)V
+    .line 26
+    const-string v4, "TOP"
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->TOP_LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 28
+    const/4 v5, 0x3
 
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 30
+    invoke-direct {v3, v4, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    const-string v1, "TOP"
+    .line 31
+    sput-object v3, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    const/4 v2, 0x3
+    .line 34
+    new-instance v4, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;-><init>(Ljava/lang/String;I)V
+    .line 36
+    const-string v5, "TOP_RIGHT"
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 38
+    const/4 v6, 0x4
 
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 40
+    invoke-direct {v4, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    const-string v1, "TOP_RIGHT"
+    .line 41
+    new-instance v5, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    const/4 v2, 0x4
+    .line 44
+    const-string v6, "RIGHT"
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;-><init>(Ljava/lang/String;I)V
+    .line 46
+    const/4 v7, 0x5
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->TOP_RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 48
+    invoke-direct {v5, v6, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 49
+    new-instance v6, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    const-string v1, "RIGHT"
+    .line 52
+    const-string v7, "BOTTOM_RIGHT"
 
-    const/4 v2, 0x5
+    .line 54
+    const/4 v8, 0x6
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;-><init>(Ljava/lang/String;I)V
+    .line 56
+    invoke-direct {v6, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 57
+    new-instance v7, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 60
+    const-string v8, "BOTTOM"
 
-    const-string v1, "BOTTOM_RIGHT"
+    .line 62
+    const/4 v9, 0x7
 
-    const/4 v2, 0x6
+    .line 64
+    invoke-direct {v7, v8, v9}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;-><init>(Ljava/lang/String;I)V
+    .line 65
+    new-instance v8, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->BOTTOM_RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 68
+    const-string v9, "BOTTOM_LEFT"
 
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 70
+    const/16 v10, 0x8
 
-    const-string v1, "BOTTOM"
+    .line 72
+    invoke-direct {v8, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    const/4 v2, 0x7
+    .line 74
+    filled-new-array/range {v0 .. v8}, [Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    const-string v1, "BOTTOM_LEFT"
-
-    const/16 v2, 0x8
-
-    invoke-direct {v0, v1, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->BOTTOM_LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
-    invoke-static {}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->$values()[Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
-
+    .line 77
     move-result-object v0
 
+    .line 80
     sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->$VALUES:[Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
+    .line 81
+    invoke-static {v0}, Lkotlin/enums/EnumEntriesKt;->enumEntries([Ljava/lang/Enum;)Lkotlin/enums/EnumEntries;
+
+    .line 83
     return-void
-.end method
-
-.method private constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-    .param p1, "$enum$name"    # Ljava/lang/String;
-    .param p2, "$enum$ordinal"    # I
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
-
-    .line 840
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    return-void
+    .line 86
 .end method
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
     .locals 1
 
+    .line 1
     const-class v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
+    .line 2
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    move-result-object v0
+    .line 4
+    move-result-object p0
 
-    check-cast v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
+    .line 7
+    check-cast p0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
-    return-object v0
+    .line 8
+    return-object p0
+    .line 10
 .end method
 
 .method public static values()[Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;->$VALUES:[Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
+    .line 2
     invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
+    .line 4
     move-result-object v0
 
+    .line 7
     check-cast v0, [Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;
 
+    .line 8
     return-object v0
+    .line 10
 .end method

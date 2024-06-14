@@ -1,47 +1,9 @@
 .class final Lcom/android/systemui/animation/AnimatedDialog$decorView$2;
 .super Lkotlin/jvm/internal/Lambda;
-.source "DialogLaunchAnimator.kt"
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/animation/AnimatedDialog;-><init>(Lcom/android/systemui/animation/LaunchAnimator;Landroid/service/dreams/IDreamManager;Landroid/view/View;Lkotlin/jvm/functions/Function1;Landroid/app/Dialog;ZLcom/android/systemui/animation/AnimatedDialog;Z)V
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
-    name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function0<",
-        "Landroid/view/ViewGroup;",
-        ">;"
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
-    }
-    d2 = {
-        "<anonymous>",
-        "Landroid/view/ViewGroup;",
-        "invoke"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x6,
-        0x0
-    }
-    xi = 0x30
-.end annotation
 
 
 # instance fields
@@ -49,63 +11,53 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/animation/AnimatedDialog;)V
-    .locals 1
+.method public constructor <init>(Lcom/android/systemui/animation/AnimatedDialog;)V
+    .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/android/systemui/animation/AnimatedDialog$decorView$2;->this$0:Lcom/android/systemui/animation/AnimatedDialog;
 
-    const/4 v0, 0x0
+    .line 2
+    const/4 p1, 0x0
 
-    invoke-direct {p0, v0}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+    .line 4
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
+    .line 5
     return-void
+    .line 8
 .end method
 
 
 # virtual methods
-.method public final invoke()Landroid/view/ViewGroup;
-    .locals 2
+.method public final invoke()Ljava/lang/Object;
+    .locals 0
 
-    .line 306
-    iget-object v0, p0, Lcom/android/systemui/animation/AnimatedDialog$decorView$2;->this$0:Lcom/android/systemui/animation/AnimatedDialog;
+    .line 1
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog$decorView$2;->this$0:Lcom/android/systemui/animation/AnimatedDialog;
 
-    invoke-virtual {v0}, Lcom/android/systemui/animation/AnimatedDialog;->getDialog()Landroid/app/Dialog;
+    .line 2
+    iget-object p0, p0, Lcom/android/systemui/animation/AnimatedDialog;->dialog:Landroid/app/Dialog;
 
-    move-result-object v0
+    .line 4
+    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    .line 6
+    move-result-object p0
 
-    move-result-object v0
+    .line 9
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    .line 10
+    invoke-virtual {p0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+    .line 13
+    move-result-object p0
 
-    move-result-object v0
+    .line 16
+    check-cast p0, Landroid/view/ViewGroup;
 
-    if-eqz v0, :cond_0
-
-    check-cast v0, Landroid/view/ViewGroup;
-
-    return-object v0
-
-    :cond_0
-    new-instance v0, Ljava/lang/NullPointerException;
-
-    const-string v1, "null cannot be cast to non-null type android.view.ViewGroup"
-
-    invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
-
-    .line 306
-    invoke-virtual {p0}, Lcom/android/systemui/animation/AnimatedDialog$decorView$2;->invoke()Landroid/view/ViewGroup;
-
-    move-result-object v0
-
-    return-object v0
+    .line 17
+    return-object p0
+    .line 19
 .end method

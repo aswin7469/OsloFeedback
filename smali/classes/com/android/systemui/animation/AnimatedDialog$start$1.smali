@@ -1,99 +1,92 @@
-.class final Lcom/android/systemui/animation/AnimatedDialog$start$1;
+.class public final Lcom/android/systemui/animation/AnimatedDialog$start$1;
 .super Ljava/lang/Object;
-.source "DialogLaunchAnimator.kt"
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 # interfaces
 .implements Landroid/view/View$OnApplyWindowInsetsListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/animation/AnimatedDialog;->start()V
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
-    name = null
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\n \u0002*\u0004\u0018\u00010\u00010\u00012\u000e\u0010\u0003\u001a\n \u0002*\u0004\u0018\u00010\u00040\u00042\u000e\u0010\u0005\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001H\n\u00a2\u0006\u0002\u0008\u0006"
-    }
-    d2 = {
-        "<anonymous>",
-        "Landroid/view/WindowInsets;",
-        "kotlin.jvm.PlatformType",
-        "view",
-        "Landroid/view/View;",
-        "windowInsets",
-        "onApplyWindowInsets"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x6,
-        0x0
-    }
-    xi = 0x30
-.end annotation
-
-
-# static fields
-.field public static final INSTANCE:Lcom/android/systemui/animation/AnimatedDialog$start$1;
+# instance fields
+.field public final synthetic $wasFittingNavigationBars:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/android/systemui/animation/AnimatedDialog$start$1;
-
-    invoke-direct {v0}, Lcom/android/systemui/animation/AnimatedDialog$start$1;-><init>()V
-
-    sput-object v0, Lcom/android/systemui/animation/AnimatedDialog$start$1;->INSTANCE:Lcom/android/systemui/animation/AnimatedDialog$start$1;
-
-    return-void
-.end method
-
-.method constructor <init>()V
+.method public constructor <init>(Z)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    iput-boolean p1, p0, Lcom/android/systemui/animation/AnimatedDialog$start$1;->$wasFittingNavigationBars:Z
+
+    .line 5
     return-void
+    .line 7
 .end method
 
 
 # virtual methods
 .method public final onApplyWindowInsets(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-    .locals 5
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "windowInsets"    # Landroid/view/WindowInsets;
+    .locals 2
 
-    .line 476
+    .line 1
+    iget-boolean p0, p0, Lcom/android/systemui/animation/AnimatedDialog$start$1;->$wasFittingNavigationBars:Z
+
+    .line 2
+    if-eqz p0, :cond_0
+
+    .line 4
     invoke-static {}, Landroid/view/WindowInsets$Type;->displayCutout()I
 
+    .line 6
+    move-result p0
+
+    .line 9
+    invoke-static {}, Landroid/view/WindowInsets$Type;->navigationBars()I
+
+    .line 10
     move-result v0
 
-    invoke-virtual {p2, v0}, Landroid/view/WindowInsets;->getInsets(I)Landroid/graphics/Insets;
+    .line 13
+    or-int/2addr p0, v0
 
-    move-result-object v0
+    .line 14
+    goto :goto_0
 
-    .line 477
-    .local v0, "insets":Landroid/graphics/Insets;
-    iget v1, v0, Landroid/graphics/Insets;->left:I
+    .line 15
+    :cond_0
+    invoke-static {}, Landroid/view/WindowInsets$Type;->displayCutout()I
 
-    iget v2, v0, Landroid/graphics/Insets;->top:I
+    .line 16
+    move-result p0
 
-    iget v3, v0, Landroid/graphics/Insets;->right:I
+    .line 19
+    :goto_0
+    invoke-virtual {p2, p0}, Landroid/view/WindowInsets;->getInsets(I)Landroid/graphics/Insets;
 
-    iget v4, v0, Landroid/graphics/Insets;->bottom:I
+    .line 20
+    move-result-object p0
 
-    invoke-virtual {p1, v1, v2, v3, v4}, Landroid/view/View;->setPadding(IIII)V
+    .line 23
+    iget p2, p0, Landroid/graphics/Insets;->left:I
 
-    .line 478
-    sget-object v1, Landroid/view/WindowInsets;->CONSUMED:Landroid/view/WindowInsets;
+    .line 24
+    iget v0, p0, Landroid/graphics/Insets;->top:I
 
-    return-object v1
+    .line 26
+    iget v1, p0, Landroid/graphics/Insets;->right:I
+
+    .line 28
+    iget p0, p0, Landroid/graphics/Insets;->bottom:I
+
+    .line 30
+    invoke-virtual {p1, p2, v0, v1, p0}, Landroid/view/View;->setPadding(IIII)V
+
+    .line 32
+    sget-object p0, Landroid/view/WindowInsets;->CONSUMED:Landroid/view/WindowInsets;
+
+    .line 35
+    return-object p0
+    .line 37
 .end method

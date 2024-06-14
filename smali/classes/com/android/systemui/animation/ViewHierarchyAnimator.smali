@@ -1,226 +1,146 @@
-.class public final Lcom/android/systemui/animation/ViewHierarchyAnimator;
+.class public abstract Lcom/android/systemui/animation/ViewHierarchyAnimator;
 .super Ljava/lang/Object;
-.source "ViewHierarchyAnimator.kt"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;,
-        Lcom/android/systemui/animation/ViewHierarchyAnimator$Hotspot;,
-        Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0005\u0018\u0000 \u00042\u00020\u0001:\u0003\u0003\u0004\u0005B\u0005\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0006"
-    }
-    d2 = {
-        "Lcom/android/systemui/animation/ViewHierarchyAnimator;",
-        "",
-        "()V",
-        "Bound",
-        "Companion",
-        "Hotspot",
-        "frameworks__base__packages__SystemUI__animation__android_common__SystemUIAnimationLib"
-    }
-    k = 0x1
-    mv = {
-        0x1,
-        0x6,
-        0x0
-    }
-    xi = 0x30
-.end annotation
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 
 # static fields
 .field public static final Companion:Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;
 
-.field private static final DEFAULT_ADDITION_INTERPOLATOR:Landroid/view/animation/Interpolator;
+.field public static final DEFAULT_FADE_IN_INTERPOLATOR:Landroid/view/animation/Interpolator;
 
-.field private static final DEFAULT_DURATION:J = 0x1f4L
+.field public static final DEFAULT_INTERPOLATOR:Landroid/view/animation/Interpolator;
 
-.field private static final DEFAULT_INTERPOLATOR:Landroid/view/animation/Interpolator;
-
-.field private static final DEFAULT_REMOVAL_INTERPOLATOR:Landroid/view/animation/Interpolator;
-
-.field private static final PROPERTIES:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;",
-            "Landroid/util/IntProperty<",
-            "Landroid/view/View;",
-            ">;>;"
-        }
-    .end annotation
-.end field
+.field public static final PROPERTIES:Ljava/util/Map;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 6
 
+    .line 1
     new-instance v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;
 
-    const/4 v1, 0x0
+    .line 2
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0, v1}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-
+    .line 4
     sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator;->Companion:Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;
 
-    .line 39
-    sget-object v1, Lcom/android/systemui/animation/Interpolators;->STANDARD:Landroid/view/animation/Interpolator;
+    .line 7
+    sget-object v0, Lcom/android/app/animation/Interpolators;->STANDARD:Landroid/view/animation/Interpolator;
 
-    sput-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator;->DEFAULT_INTERPOLATOR:Landroid/view/animation/Interpolator;
+    .line 9
+    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator;->DEFAULT_INTERPOLATOR:Landroid/view/animation/Interpolator;
+
+    .line 11
+    sget-object v0, Lcom/android/app/animation/Interpolators;->EMPHASIZED:Landroid/view/animation/Interpolator;
+
+    .line 13
+    sget-object v0, Lcom/android/app/animation/Interpolators;->ALPHA_IN:Landroid/view/animation/Interpolator;
+
+    .line 15
+    sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator;->DEFAULT_FADE_IN_INTERPOLATOR:Landroid/view/animation/Interpolator;
+
+    .line 17
+    sget-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$LEFT;
+
+    .line 19
+    invoke-virtual {v0}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->getLabel()Ljava/lang/String;
+
+    .line 21
+    move-result-object v1
+
+    .line 24
+    new-instance v2, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion$createViewProperty$1;
+
+    .line 25
+    invoke-direct {v2, v0, v1}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion$createViewProperty$1;-><init>(Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;Ljava/lang/String;)V
+
+    .line 27
+    new-instance v1, Lkotlin/Pair;
+
+    .line 30
+    invoke-direct {v1, v0, v2}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 32
+    sget-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$TOP;
+
+    .line 35
+    invoke-virtual {v0}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->getLabel()Ljava/lang/String;
+
+    .line 37
+    move-result-object v2
 
     .line 40
-    sget-object v1, Lcom/android/systemui/animation/Interpolators;->STANDARD_DECELERATE:Landroid/view/animation/Interpolator;
-
-    sput-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator;->DEFAULT_ADDITION_INTERPOLATOR:Landroid/view/animation/Interpolator;
+    new-instance v3, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion$createViewProperty$1;
 
     .line 41
-    sget-object v1, Lcom/android/systemui/animation/Interpolators;->STANDARD_ACCELERATE:Landroid/view/animation/Interpolator;
+    invoke-direct {v3, v0, v2}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion$createViewProperty$1;-><init>(Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;Ljava/lang/String;)V
 
-    sput-object v1, Lcom/android/systemui/animation/ViewHierarchyAnimator;->DEFAULT_REMOVAL_INTERPOLATOR:Landroid/view/animation/Interpolator;
-
-    .line 44
-    nop
-
-    .line 45
-    const/4 v1, 0x4
-
-    new-array v1, v1, [Lkotlin/Pair;
-
-    sget-object v2, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    sget-object v3, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->LEFT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    invoke-static {v0, v3}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;->access$createViewProperty(Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;)Landroid/util/IntProperty;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
+    .line 43
+    new-instance v2, Lkotlin/Pair;
 
     .line 46
-    sget-object v2, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    sget-object v3, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->TOP:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    invoke-static {v0, v3}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;->access$createViewProperty(Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;)Landroid/util/IntProperty;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-
-    move-result-object v2
-
-    const/4 v3, 0x1
-
-    aput-object v2, v1, v3
-
-    .line 45
-    nop
-
-    .line 47
-    sget-object v2, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    sget-object v3, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
-
-    invoke-static {v0, v3}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;->access$createViewProperty(Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;)Landroid/util/IntProperty;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-
-    move-result-object v2
-
-    const/4 v3, 0x2
-
-    aput-object v2, v1, v3
-
-    .line 45
-    nop
+    invoke-direct {v2, v0, v3}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 48
-    sget-object v2, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+    sget-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->RIGHT:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$RIGHT;
 
-    sget-object v3, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;
+    .line 51
+    invoke-virtual {v0}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->getLabel()Ljava/lang/String;
 
-    invoke-static {v0, v3}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;->access$createViewProperty(Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion;Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;)Landroid/util/IntProperty;
+    .line 53
+    move-result-object v3
 
+    .line 56
+    new-instance v4, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion$createViewProperty$1;
+
+    .line 57
+    invoke-direct {v4, v0, v3}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion$createViewProperty$1;-><init>(Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;Ljava/lang/String;)V
+
+    .line 59
+    new-instance v3, Lkotlin/Pair;
+
+    .line 62
+    invoke-direct {v3, v0, v4}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 64
+    sget-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->BOTTOM:Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound$BOTTOM;
+
+    .line 67
+    invoke-virtual {v0}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;->getLabel()Ljava/lang/String;
+
+    .line 69
+    move-result-object v4
+
+    .line 72
+    new-instance v5, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion$createViewProperty$1;
+
+    .line 73
+    invoke-direct {v5, v0, v4}, Lcom/android/systemui/animation/ViewHierarchyAnimator$Companion$createViewProperty$1;-><init>(Lcom/android/systemui/animation/ViewHierarchyAnimator$Bound;Ljava/lang/String;)V
+
+    .line 75
+    new-instance v4, Lkotlin/Pair;
+
+    .line 78
+    invoke-direct {v4, v0, v5}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 80
+    filled-new-array {v1, v2, v3, v4}, [Lkotlin/Pair;
+
+    .line 83
     move-result-object v0
 
-    invoke-static {v2, v0}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    .line 86
+    invoke-static {v0}, Lkotlin/collections/MapsKt;->mapOf([Lkotlin/Pair;)Ljava/util/Map;
 
+    .line 87
     move-result-object v0
 
-    const/4 v2, 0x3
-
-    aput-object v0, v1, v2
-
-    .line 45
-    nop
-
-    .line 44
-    invoke-static {v1}, Lkotlin/collections/MapsKt;->mapOf([Lkotlin/Pair;)Ljava/util/Map;
-
-    move-result-object v0
-
+    .line 90
     sput-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator;->PROPERTIES:Ljava/util/Map;
 
+    .line 91
     return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 0
-
-    .line 35
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static final synthetic access$getDEFAULT_ADDITION_INTERPOLATOR$cp()Landroid/view/animation/Interpolator;
-    .locals 1
-
-    .line 35
-    sget-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator;->DEFAULT_ADDITION_INTERPOLATOR:Landroid/view/animation/Interpolator;
-
-    return-object v0
-.end method
-
-.method public static final synthetic access$getDEFAULT_INTERPOLATOR$cp()Landroid/view/animation/Interpolator;
-    .locals 1
-
-    .line 35
-    sget-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator;->DEFAULT_INTERPOLATOR:Landroid/view/animation/Interpolator;
-
-    return-object v0
-.end method
-
-.method public static final synthetic access$getDEFAULT_REMOVAL_INTERPOLATOR$cp()Landroid/view/animation/Interpolator;
-    .locals 1
-
-    .line 35
-    sget-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator;->DEFAULT_REMOVAL_INTERPOLATOR:Landroid/view/animation/Interpolator;
-
-    return-object v0
-.end method
-
-.method public static final synthetic access$getPROPERTIES$cp()Ljava/util/Map;
-    .locals 1
-
-    .line 35
-    sget-object v0, Lcom/android/systemui/animation/ViewHierarchyAnimator;->PROPERTIES:Ljava/util/Map;
-
-    return-object v0
+    .line 93
 .end method

@@ -1,177 +1,142 @@
-.class public final Lcom/android/systemui/animation/ShadeInterpolation;
+.class public abstract Lcom/android/systemui/animation/ShadeInterpolation;
 .super Ljava/lang/Object;
-.source "ShadeInterpolation.kt"
-
-
-# annotations
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0004\u0008\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0004H\u0007J\u0010\u0010\u0006\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0004H\u0007J\u0010\u0010\u0007\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0004H\u0002\u00a8\u0006\u0008"
-    }
-    d2 = {
-        "Lcom/android/systemui/animation/ShadeInterpolation;",
-        "",
-        "()V",
-        "getContentAlpha",
-        "",
-        "fraction",
-        "getNotificationScrimAlpha",
-        "interpolateEaseInOut",
-        "frameworks__base__packages__SystemUI__animation__android_common__SystemUIAnimationLib"
-    }
-    k = 0x1
-    mv = {
-        0x1,
-        0x6,
-        0x0
-    }
-    xi = 0x30
-.end annotation
-
-
-# static fields
-.field public static final INSTANCE:Lcom/android/systemui/animation/ShadeInterpolation;
+.source "go/retraceme be682e25c720d24c59e6dfd4503a122f336aef7d9385d1799ce92aff5c0ddfca"
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/android/systemui/animation/ShadeInterpolation;
-
-    invoke-direct {v0}, Lcom/android/systemui/animation/ShadeInterpolation;-><init>()V
-
-    sput-object v0, Lcom/android/systemui/animation/ShadeInterpolation;->INSTANCE:Lcom/android/systemui/animation/ShadeInterpolation;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
-    .locals 0
-
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
 .method public static final getContentAlpha(F)F
     .locals 3
-    .param p0, "fraction"    # F
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
-    .line 23
-    const/4 v0, 0x0
+    .line 1
+    const v0, 0x3e99999a    # 0.3f
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    .line 2
+    const/4 v1, 0x0
 
-    const v2, 0x3e99999a    # 0.3f
+    .line 5
+    const/high16 v2, 0x3f800000    # 1.0f
 
-    invoke-static {v0, v1, v2, v1, p0}, Landroid/util/MathUtils;->constrainedMap(FFFFF)F
+    .line 6
+    invoke-static {v1, v2, v0, v2, p0}, Landroid/util/MathUtils;->constrainedMap(FFFFF)F
 
-    move-result v0
+    .line 8
+    move-result p0
 
-    .line 24
-    .local v0, "mappedFraction":F
-    sget-object v1, Lcom/android/systemui/animation/ShadeInterpolation;->INSTANCE:Lcom/android/systemui/animation/ShadeInterpolation;
+    .line 11
+    invoke-static {p0}, Lcom/android/systemui/animation/ShadeInterpolation;->interpolateEaseInOut(F)F
 
-    invoke-direct {v1, v0}, Lcom/android/systemui/animation/ShadeInterpolation;->interpolateEaseInOut(F)F
+    .line 12
+    move-result p0
 
-    move-result v1
-
-    return v1
+    .line 15
+    return p0
+    .line 16
 .end method
 
 .method public static final getNotificationScrimAlpha(F)F
     .locals 3
-    .param p0, "fraction"    # F
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
 
-    .line 13
-    const/4 v0, 0x0
+    .line 1
+    const/high16 v0, 0x3f000000    # 0.5f
 
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    const/high16 v2, 0x3f000000    # 0.5f
-
-    invoke-static {v0, v1, v0, v2, p0}, Landroid/util/MathUtils;->constrainedMap(FFFFF)F
-
-    move-result v0
-
-    .line 14
-    .local v0, "mappedFraction":F
-    sget-object v1, Lcom/android/systemui/animation/ShadeInterpolation;->INSTANCE:Lcom/android/systemui/animation/ShadeInterpolation;
-
-    invoke-direct {v1, v0}, Lcom/android/systemui/animation/ShadeInterpolation;->interpolateEaseInOut(F)F
-
-    move-result v1
-
-    return v1
-.end method
-
-.method private final interpolateEaseInOut(F)F
-    .locals 9
-    .param p1, "fraction"    # F
-
-    .line 28
-    const v0, 0x3f99999a    # 1.2f
-
-    mul-float/2addr v0, p1
-
-    const v1, 0x3e4ccccd    # 0.2f
-
-    sub-float/2addr v0, v1
-
-    .line 29
-    .local v0, "mappedFraction":F
+    .line 2
     const/4 v1, 0x0
 
-    cmpg-float v2, v0, v1
+    .line 4
+    const/high16 v2, 0x3f800000    # 1.0f
 
-    if-gtz v2, :cond_0
+    .line 5
+    invoke-static {v1, v2, v1, v0, p0}, Landroid/util/MathUtils;->constrainedMap(FFFFF)F
 
-    .line 30
+    .line 7
+    move-result p0
+
+    .line 10
+    invoke-static {p0}, Lcom/android/systemui/animation/ShadeInterpolation;->interpolateEaseInOut(F)F
+
+    .line 11
+    move-result p0
+
+    .line 14
+    return p0
+    .line 15
+.end method
+
+.method public static interpolateEaseInOut(F)F
+    .locals 6
+
+    .line 1
+    const v0, 0x3f99999a    # 1.2f
+
+    .line 2
+    mul-float/2addr p0, v0
+
+    .line 5
+    const v0, 0x3e4ccccd    # 0.2f
+
+    .line 6
+    sub-float/2addr p0, v0
+
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    cmpg-float v1, p0, v0
+
+    .line 11
+    if-gtz v1, :cond_0
+
+    .line 13
     goto :goto_0
 
-    .line 32
+    .line 15
     :cond_0
-    const/high16 v1, 0x3f800000    # 1.0f
+    const/high16 v0, 0x3f800000    # 1.0f
 
-    sub-float v2, v1, v0
+    .line 16
+    sub-float p0, v0, p0
 
-    .line 33
-    .local v2, "oneMinusFrac":F
-    float-to-double v3, v1
+    .line 18
+    float-to-double v0, v0
 
-    const/high16 v1, 0x3f000000    # 0.5f
+    .line 20
+    const/high16 v2, 0x3f000000    # 0.5f
 
-    float-to-double v5, v1
+    .line 21
+    float-to-double v2, v2
 
-    const v1, 0x40490fd0
+    .line 23
+    const v4, 0x40490fd0
 
-    mul-float/2addr v1, v2
+    .line 24
+    mul-float/2addr v4, p0
 
-    mul-float/2addr v1, v2
+    .line 27
+    mul-float/2addr v4, p0
 
-    float-to-double v7, v1
-
-    invoke-static {v7, v8}, Ljava/lang/Math;->cos(D)D
-
-    move-result-wide v7
-
-    sub-double v7, v3, v7
-
-    mul-double/2addr v5, v7
-
-    sub-double/2addr v3, v5
-
-    .line 34
-    double-to-float v1, v3
+    .line 28
+    float-to-double v4, v4
 
     .line 29
-    .end local v2    # "oneMinusFrac":F
+    invoke-static {v4, v5}, Ljava/lang/Math;->cos(D)D
+
+    .line 30
+    move-result-wide v4
+
+    .line 33
+    sub-double v4, v0, v4
+
+    .line 34
+    mul-double/2addr v4, v2
+
+    .line 36
+    sub-double/2addr v0, v4
+
+    .line 37
+    double-to-float v0, v0
+
+    .line 38
     :goto_0
-    return v1
+    return v0
+    .line 39
 .end method
